@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-infinite-scroll-component": "^6.1.0",
     "react-router-dom": "^7.4.0",
-    "styled-components": "^6.1.16"
+    "styled-components": "^6.1.16",
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

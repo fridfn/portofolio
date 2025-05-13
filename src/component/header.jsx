@@ -1,20 +1,23 @@
+import { getImage } from "@/utils/getImage"
+import Fire from "@/component/animate/fire"
 import React, { useState, useEffect, useRef } from "react"
-import profilePict from "@/assets/profile_pict.jpg"
-import flag_indonesia from "@/assets/flag/indonesia.svg"
-import flag_usa from "@/assets/flag/united-states.svg"
 
 const LeanguageOption = () => {
   return (
-   <div className="box-option" onClick={() => alert("hello indonesia")}>
-    <div className="items-option">
+   <div className="box-option">
+    <div
+     className="items-option"
+     onClick={() => alert("hello indonesia")}>
       <div id='lang' className='box'>
-       <img className='image' src={flag_indonesia} />
+       <img className='image' src={getImage('indonesia')} />
       </div>
       <p className="info">Indonesia</p>
     </div>
-    <div className="items-option">
+    <div 
+     className="items-option"
+     onClick={() => alert("hello usa")}>
       <div id='lang' className='box'>
-       <img className='image' src={flag_usa} />
+       <img className='image' src={getImage('usa')} />
       </div>
       <p className="info">English</p>
     </div>
@@ -49,9 +52,9 @@ const Header = () => {
         className='box'
         ref={optionRef}
         onClick={() => setIsOpen((prevState) => !prevState)}>
-       <img className='image' src={flag_usa} />
+       <img className='image' src={getImage('usa')} />
        <ion-icon 
-        className='icon' 
+        className='icon'
         name='caret-down'
         style={{fontSize: "15px"}}>
        </ion-icon>
@@ -62,7 +65,8 @@ const Header = () => {
       </div>
      </div>
      <div className='box'>
-      <img className='image' src={profilePict} />
+      <img className='image' src={getImage('avatar')} />
+      <Fire />
      </div>
      <div className="wrapper-info">
       <p className="title">Farid<span id='hightlight'>Fathoni N</span></p>

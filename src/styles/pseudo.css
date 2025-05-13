@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Bungee&family=Caveat+Brush&family=Ephesis&family=Frijole&family=Goldman:wght@400;700&family=Jersey+10&family=Orbitron:wght@400..900&family=Pattaya&family=Reenie+Beanie&family=Revalia&family=Russo+One&family=Sigmar&display=swap');
+
 .wrapper-info .title:before {
  position: absolute;
  content: '';
@@ -7,10 +9,58 @@
  display: block;
  background-size: cover;
  background-position: center;
- background-image: url("/public/assets/badge.png");
+ background-image: url("/badge.png");
 }
 
+.bubble:before {
+ content: '';
+ width: 25px;
+ z-index: -1;
+ height: 25px;
+ bottom: -10px;
+ border-radius: 5px;
+ position: absolute;
+ background-color: #232323;
+ transform: rotate(45deg);
+}
 
+.carousel-box .bubble .description:before, .carousel-box .bubble .description:after {
+ z-index: 20;
+ content: '"';
+ color: #62c0ff;
+ font-size: 30px;
+ position: absolute;
+ font-family: "Revalia", sans-serif;
+}
 
+.carousel-box .bubble .description:before {
+ left: 0px;
+}
 
+.navbar .items.active, .pagination .items.active {
+ border-color: #62c0ff;
+ background-color: #1A1A1A;
+}
 
+.items.active .title, .items.active .icon {
+ color: #8aff62ff;
+}
+
+.cards-experience:before, .cards-experience:after {
+ left: 0px;
+ height: 20%;
+ content: '';
+ bottom: -15%;
+ position: absolute;
+ border-left: 5px solid #252525;
+}
+
+.cards-experience:after {
+ left: -3%;
+ bottom: -15%;
+ width: 15px;
+ height: 15px;
+ border-radius: 50%;
+ border: 5px solid #252525;
+ background-color: #1A1A1A;
+}

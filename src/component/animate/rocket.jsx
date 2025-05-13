@@ -43,7 +43,7 @@ const StyledWrapper = styled.div`
     top: -20px;
     position: relative;
     left: calc(50% - 40px);
-    transform: scale(.35);
+    transform: scale(.33);
   }
 
   .rocket .rocket-body {
@@ -69,8 +69,8 @@ const StyledWrapper = styled.div`
     left: calc(50% - 24px);
     width: 48px;
     height: 13px;
-    background-color: #554842;
     bottom: -13px;
+    background-color: #554842;
     border-bottom-right-radius: 60%;
     border-bottom-left-radius: 60%;
   }
@@ -80,7 +80,7 @@ const StyledWrapper = styled.div`
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background-color: #a75248;
+    background-color: #0075c3;
     left: calc(50% - 25px);
     top: 40px;
     border: 5px solid #b4b2b2;
@@ -91,7 +91,7 @@ const StyledWrapper = styled.div`
     z-index: -100;
     height: 55px;
     width: 50px;
-    background-color: #a75248;
+    background-color: #0075c3;
   }
 
   .rocket .fin-left {

@@ -15,16 +15,27 @@ body {
  margin: 0;
  padding: 7px;
  display: flex;
- user-select: none;
  user-zoom: none;
+ user-select: none;
  box-sizing: border-box;
  flex-direction: column;
  justify-content: center;
  background-color: var(--primary-bacground);
 }
 
-p {
+p, a {
  margin: 0;
  color: #ccdfeb;
+ text-decoration: none;
+ color: inherit !important;
  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+ text-align: start;
+ list-style-position: outside;
+}
+
+li::marker {
+ font-size: 15px;
 }
