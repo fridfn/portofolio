@@ -9,7 +9,8 @@ const Homes = () => {
   return (
    <div 
     className="wrapper-section"
-    data-aos="zoom-in-down">
+    data-aos="zoom-in-down"
+    data-aos-duration="400">
     <span className="greeting">
      <p className="title" id="hightlight">Welcome!</p>
      <p className="info"><ion-icon name="business"></ion-icon>Kediri

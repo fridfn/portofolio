@@ -6,13 +6,16 @@ import UseListing from "@/utils/useListing"
 import Language from "@/component/ui/language"
 
 const Skils = ({ data }) => {
-  const BACKEND_STACK = metadata.personal.backend
+  const BACKEND_STACK = metadata.personal.skills.backend
+  const FRONTEND_STACK = metadata.personal.skills.frontend
+  const OTHER_STACK = metadata.personal.skills.other
   const LANGUAGE_STACK = metadata.personal.language
   
   return (
    <div 
      className="wrapper-section"
-     data-aos="zoom-in-down">
+     data-aos="zoom-in-down"
+     data-aos-duration="300">
     <span className="greeting">
      <p className='title' id='hightlight'>{data.title}</p>
     </span>
@@ -27,11 +30,11 @@ const Skils = ({ data }) => {
      </div>
      <div className="wrapper-content" id="skills">
       <p className="title">Frontend</p>
-      <UseListing component={BACKEND_STACK} type="progress" />
+      <UseListing component={FRONTEND_STACK} type="progress" />
      </div>
      <div className="wrapper-content" id="skills">
       <p className="title">Other Skills</p>
-      <UseListing component={BACKEND_STACK} type="progress" />
+      <UseListing component={OTHER_STACK} type="progress" />
      </div>
      <div className="wrapper-content" id="skills">
       <p className="title">Languages</p>

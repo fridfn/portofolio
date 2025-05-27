@@ -420,7 +420,9 @@ span div .description, .wrapper-bar .description {
 }
 
 .cards-awards {
+ padding: 30px;
  margin-left: 35px;
+ text-align: justify;
 }
 
 .cards-awards:before, .cards-awards .experience-header-title:before {
@@ -448,14 +450,14 @@ span div .description, .wrapper-bar .description {
 .cards-awards .experience-header-title span {
  gap: 0px;
  display: flex;
- flex-direction: column;
+ flex-direction: row;
 }
 
 .cards-awards .experience-header-title span .items {
  gap: 8px;
  margin: 0;
  left: -15px;
- padding: 3px 15px;
+ padding: 3px 10px;
  position: relative;
  align-items: center;
  border-radius: 10px;

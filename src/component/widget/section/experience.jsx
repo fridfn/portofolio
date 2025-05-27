@@ -7,7 +7,8 @@ const Experience = () => {
   return (
    <div
     className="wrapper-section"
-    data-aos="zoom-in-down">
+    data-aos="zoom-in-down"
+    data-aos-duration="300">
     <span className="greeting">
      <p className="title" id="hightlight">Experience</p>
     </span>

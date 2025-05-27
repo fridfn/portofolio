@@ -4,7 +4,8 @@ import EachUtils from "@/utils/EachUtils"
 import BubbleSelected from "@/component/ui/bubbleSelected"
 
 const CardsProject = ({ data }) => {
-  const { name, image, type, stack, description } = data;
+  const { name, icons, image, type, stack, description } = data;
+  
   return (
    <div className="cards-project">
     <div className="experience-header-title">
@@ -31,9 +32,11 @@ const CardsProject = ({ data }) => {
     </div>
     <div className="media-social">
      <span>
-      <ion-icon className="icon" name="school"></ion-icon>
-      <ion-icon className="icon" name="school"></ion-icon>
-      <ion-icon className="icon" name="school"></ion-icon>
+     <EachUtils
+       of={icons}
+       render={(value, index) => (
+        <ion-icon key={index} className="icon" name={value}></ion-icon>
+       )}/>
      </span>
       <ion-icon className="icon" name="layers"></ion-icon>
     </div>

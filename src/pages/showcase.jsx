@@ -5,6 +5,7 @@ import Pagination from "@/component/ui/pagination"
 import Skils from "@/component/widget/section/skils"
 import Awards from "@/component/widget/section/awards"
 import Portofolio from "@/component/widget/section/portofolio"
+import { motion, AnimatePresence } from "framer-motion"
 
 const datas = {
  title: "Skills",
@@ -13,7 +14,7 @@ const datas = {
 
 const pagination = [
  {
-  icon: "build",
+  icon: "construct",
   component: Skils,
   routes: "/showcase/skills"
  },
@@ -23,7 +24,7 @@ const pagination = [
   routes: "/showcase/portofolio"
  },
  {
-  icon:  "medal",
+  icon:  "ribbon",
   component: Awards,
   routes: "/showcase/awards"
  },
@@ -43,7 +44,17 @@ const Showcase = ({ data }) => {
     <Header />
     <Pagination data={pagination} />
     <Navbar pages="showcase" />
-    <ViewedPages data={datas} />
+    <AnimatePresence mode="wait">
+      <motion.section
+        key={data}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 1, x: -100 + "%" }}
+        transition={{ duration: 0.5 }}
+      >
+        <ViewedPages data={datas} />
+      </motion.section>
+     </AnimatePresence>
    </div>
   )
 }

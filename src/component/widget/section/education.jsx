@@ -8,7 +8,8 @@ const Education = ({ data }) => {
    <>
     <div
      className="wrapper-section"
-     data-aos="zoom-in-down">
+     data-aos="zoom-in-down"
+     data-aos-duration="400">
      <span className="greeting">
       <p className="title" id="hightlight">{data.title}</p>
      </span>

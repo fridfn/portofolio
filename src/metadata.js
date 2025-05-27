@@ -7,6 +7,11 @@ import mysql from "@/assets/logo/mysql.webp"
 import php from "@/assets/logo/php8.webp"
 import mongodb from "@/assets/logo/mongodb.webp"
 import git from "@/assets/logo/git.webp"
+import css from "@/assets/logo/css.webp"
+import html from "@/assets/logo/html.webp"
+import javascript from "@/assets/logo/javascript.webp"
+import react from "@/assets/logo/react.webp"
+import tailwind from "@/assets/logo/tailwind.webp"
 
 const metadata = {
  personal: {
@@ -72,38 +77,6 @@ const metadata = {
     comment: "Working with Livy was a transformative experience. His programming skills and dedication not only improved our project but also inspired the entire team."
    },
   ],
-  backend: [
-   {
-    tech: "NodeJs",
-    image: nodejs,
-    percent: 95,
-    experience: "2+ years experience",
-   },
-   {
-    tech: "MySQL",
-    image: mysql,
-    percent: 70,
-    experience: "1+ years experience",
-   },
-   {
-    tech: "PHP",
-    image: php,
-    percent: 75,
-    experience: "1+ years experience",
-   },
-   {
-    tech: "mongoDB",
-    image: mongodb,
-    percent: 85,
-    experience: "1+ years experience",
-   },
-   {
-    tech: "Git",
-    image: git,
-    percent: 80,
-    experience: "3+ years experience",
-   },
-  ],
   language: [
    {
     language: "Indonesia",
@@ -142,16 +115,16 @@ const metadata = {
     image: "mysql",
     type: "Web Apps",
     year: "Oct 2022",
-    icons: "layers",
+    icons: ["logo-github", "logo-facebook", "link"],
     stack: ["javascript", "Sass", "React"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
    {
     name: "Fabot Apps",
     image: "mysql",
-    icons: "school",
     type: "Web Apps",
     year: "Oct 2022",
+    icons: ["logo-github", "logo-facebook", "link"],
     stack: ["javascript", "Css", "HTML5"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
@@ -159,8 +132,8 @@ const metadata = {
     name: "Clothing Shop",
     image: "mysql",
     type: "E-Comerce",
-    icons: "medal",
     year: "Oct 2022",
+    icons: ["logo-github", "logo-facebook", "link"],
     stack: ["PHP", "Css", "HTML5", "MySQL"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
@@ -168,17 +141,17 @@ const metadata = {
     name: "Shorts Web",
     image: "mysql",
     type: "Design",
-    icons: "layers",
     year: "Oct 2022",
+    icons: ["logo-github", "logo-facebook", "link"],
     stack: ["Css", "HTML5"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
    {
     name: "Ensiklopedia Dinosaurs",
     image: "mysql",
-    icons: "time",
     year: "Oct 2022",
     type: "Information",
+    icons: ["logo-github", "logo-facebook", "link"],
     stack: ["React", "Sass", "Css", "HTML5"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
@@ -245,35 +218,133 @@ const metadata = {
   socials: [
    {
     name: "Phone",
-    icons: "layers",
+    icons: "call",
     link: "unknown",
     description: "+62 9952 474 91"
    },
    {
     name: "E-Mail",
-    icons: "layers",
+    icons: "mail",
     link: "unknown",
     description: "faridfathonin@gmail.com"
    },
    {
     name: "LinkedIn",
-    icons: "layers",
+    icons: "logo-linkedin",
     link: "unknown",
     description: "Farid Fathoni N"
    },
    {
     name: "Facebook",
-    icons: "layers",
+    icons: "logo-facebook",
     link: "unknown",
     description: "Rid"
    },
    {
     name: "Instagram",
-    icons: "layers",
+    icons: "logo-instagram",
     link: "unknown",
     description: "@fridfn_"
    },
-  ]
+  ],
+  skills: {
+   backend: [
+    {
+     tech: "NodeJs",
+     image: nodejs,
+     percent: 95,
+     experience: "2+ years experience",
+    },
+    {
+     tech: "MySQL",
+     image: mysql,
+     percent: 70,
+     experience: "1+ years experience",
+    },
+    {
+     tech: "PHP",
+     image: php,
+     percent: 75,
+     experience: "1+ years experience",
+    },
+    {
+     tech: "mongoDB",
+     image: mongodb,
+     percent: 85,
+     experience: "1+ years experience",
+    },
+    {
+     tech: "Git",
+     image: git,
+     percent: 80,
+     experience: "3+ years experience",
+    },
+   ],
+   frontend: [
+    {
+     tech: "HTML",
+     image: html,
+     percent: 98,
+     experience: "3+ years experience",
+    },
+    {
+     tech: "CSS",
+     image: css,
+     percent: 94,
+     experience: "3+ years experience",
+    },
+    {
+     tech: "Javascript",
+     image: javascript,
+     percent: 73,
+     experience: "2+ years experience",
+    },
+    {
+     tech: "React",
+     image: react,
+     percent: 60,
+     experience: "1+ years experience",
+    },
+    {
+     tech: "Tailwind",
+     image: tailwind,
+     percent: 47,
+     experience: "2+ month experience",
+    },
+   ],
+   other: [
+    {
+     tech: "Problem Solving",
+     image: react,
+     percent: 87,
+     experience: "3+ years experience",
+    },
+    {
+     tech: "Critical Thinking",
+     image: react,
+     percent: 85,
+     experience: "3+ years experience",
+    },
+    {
+     tech: "Communication skills",
+     image: react,
+     percent: 90,
+     experience: "2+ years experience",
+    },
+    {
+     tech: "Team collaboration",
+     image: react,
+     percent: 88,
+     experience: "1+ years experience",
+    },
+    {
+     tech: "Project management",
+     image: react,
+     percent: 97,
+     experience: "2+ month experience",
+    },
+   ]
+  }
  },
  images: {
   avatar: avatar,

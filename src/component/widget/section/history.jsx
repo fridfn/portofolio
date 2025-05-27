@@ -7,7 +7,8 @@ const Showcase = () => {
   return (
    <div
     className="wrapper-section"
-    data-aos="zoom-in-down">
+    data-aos="zoom-in-down"
+    data-aos-duration="400">
     <span className="greeting">
      <p className="title" id="hightlight">Welcome!</p>
     </span>

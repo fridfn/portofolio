@@ -32,7 +32,7 @@ const Forms = ({ data }) => {
   
   const handleSubmit = (e) => {
    e.preventDefault()
-   console.log(formData)
+   console.log({formData})
   }
   
   const ListInput = [
@@ -40,21 +40,21 @@ const Forms = ({ data }) => {
      name: "name",
      type: "text",
      maxLength: "15",
-     icons: "school",
+     icons: "pencil",
      placeholder: "name*",
     },
     {
      type: "email",
      name: "email",
      maxLength: "30",
-     icons: "medal",
+     icons: "mail",
      placeholder: "email*",
     },
     {
      type: "text",
      name: "subject",
      maxLength: "15",
-     icons: "layers",
+     icons: "create",
      placeholder: "subject*",
     },
    ]
@@ -71,7 +71,7 @@ const Forms = ({ data }) => {
        render={(value, index) => (
          <InputForms
            formData={formData} 
-           data={value} key={index} 
+           data={value} key={index}
            handleChange={handleChange} />
        )}/>
       <div className="items">
@@ -79,7 +79,7 @@ const Forms = ({ data }) => {
       </div>
      </form>
      <button type="submit" className="submit-button" form="form-email">
-     <ion-icon className="icon" name="layers"></ion-icon>
+     <ion-icon className="icon" name="mail"></ion-icon>
      send message
      </button>
     </div>
