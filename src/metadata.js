@@ -65,19 +65,19 @@ const metadata = {
     client: "Nayla",
     avatar: "nayla",
     from: "Students at SMK Bina Prestasi",
-    comment: "Working with Livy was a transformative experience. His programming skills and dedication not only improved our project but also inspired the entire team."
+    comment: "Farid helped me turn a Figma design into a fully functional website for a school project. His attention to detail and guidance made the process smooth and really improved the final result."
    },
    {
     client: "Dede",
     avatar: "dede",
     from: "Students at SMK Yapin Bekasi",
-    comment: "Working with Livy was a transformative experience. His programming skills and dedication not only improved our project but also inspired the entire team."
+    comment: "As someone new to web development, working with Farid was a great learning experience. He explained concepts clearly and always encouraged me to keep learning and experimenting."
    },
    {
     client: "Peter",
     avatar: "peter",
     from: "Frontend Devoper Freelancer",
-    comment: "Working with Livy was a transformative experience. His programming skills and dedication not only improved our project but also inspired the entire team."
+    comment: "Farid was a fantastic teammate. He’s proactive, skilled, and always willing to support the team. Collaborating with him made our work more efficient and enjoyable."
    },
   ],
   language: [

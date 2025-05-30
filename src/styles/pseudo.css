@@ -34,7 +34,7 @@
 }
 
 .carousel-box .bubble .description:before {
- left: 0px;
+ margin-left: -22px;
 }
 
 .navbar .items.active, .pagination .items.active {
