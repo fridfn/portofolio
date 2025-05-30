@@ -54,10 +54,10 @@ const UseListing = ({ component, scroll, type }) => {
       onClick={fetchMoreData}>
        <ion-icon name='caret-down'></ion-icon>
        More
-      </button>
+     </button>
      )}
     </InfiniteScroll>
   )
 }
 
-export default UseListing
+export default UseListing;

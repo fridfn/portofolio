@@ -12,6 +12,9 @@ import html from "@/assets/logo/html.webp"
 import javascript from "@/assets/logo/javascript.webp"
 import react from "@/assets/logo/react.webp"
 import tailwind from "@/assets/logo/tailwind.webp"
+import nayla from "@/assets/logo/nayla.webp"
+import dede from "@/assets/logo/dede.webp"
+import peter from "@/assets/logo/peter.webp"
 
 const metadata = {
  personal: {
@@ -37,43 +40,43 @@ const metadata = {
     description: 'really like playing games and watching movies to fill my free time'
    },
    {
-    icons: 'images',
+    icons: 'create',
     title: 'Writing & Typing',
     description: 'Writing and typing is my favorite thing to do in a book or in phone'
    },
    {
-    icons: 'game-controller',
+    icons: 'people',
     title: 'Hangout & Friends',
     description: 'Hangout with friends is another healing me, cause you can talk alot'
    },
    {
-    icons: 'images',
+    icons: 'mic',
     title: 'Singing & Karoke',
     description: "I really like singing when the song is my favorite songs, it's very fun"
    },
    {
-    icons: 'images',
+    icons: 'person',
     title: 'Being Alone',
     description: 'Being alone is my favorite place, I can suddenly disappear for whole time'
    },
   ],
   reviews: [
    {
-    client: "Ayuu",
-    avatar: "ayuu",
-    from: "CEO at Salesforrce",
+    client: "Nayla",
+    avatar: "nayla",
+    from: "Students at SMK Bina Prestasi",
     comment: "Working with Livy was a transformative experience. His programming skills and dedication not only improved our project but also inspired the entire team."
    },
    {
-    client: "Ayuu",
-    avatar: "farid",
-    from: "CEO at Salesfoerce",
+    client: "Dede",
+    avatar: "dede",
+    from: "Students at SMK Yapin Bekasi",
     comment: "Working with Livy was a transformative experience. His programming skills and dedication not only improved our project but also inspired the entire team."
    },
    {
-    client: "Ayuu",
-    avatar: "nabilla",
-    from: "CEO at Salesforces",
+    client: "Peter",
+    avatar: "peter",
+    from: "Frontend Devoper Freelancer",
     comment: "Working with Livy was a transformative experience. His programming skills and dedication not only improved our project but also inspired the entire team."
    },
   ],
@@ -94,18 +97,6 @@ const metadata = {
     language: "Malaysia",
     image: flag_usa,
     info: "-- Intermediate",
-    description: "et enim eiusmod occaecat minim aute mollit commodo sunt laboris et irure nisi id",
-   },
-   {
-    language: "Japanese",
-    image: flag_usa,
-    info: "-- Basic",
-    description: "et enim eiusmod occaecat minim aute mollit commodo sunt laboris et irure nisi id",
-   },
-   {
-    language: "Korean",
-    image: flag_usa,
-    info: "-- Basic",
     description: "et enim eiusmod occaecat minim aute mollit commodo sunt laboris et irure nisi id",
    },
   ],
@@ -201,49 +192,49 @@ const metadata = {
   updates: [
    {
     total: 25,
-    icons: "layers",
+    icons: "albums",
     description: "Website Published"
    },
    {
-    total: 5,
-    icons: "school",
+    total: 3,
+    icons: "chatbubbles",
     description: "Leanguages Speak"
    },
    {
-    total: 7,
-    icons: "medal",
-    description: "Expert Frontend"
+    total: 290.506,
+    icons: "eye",
+    description: "Public Visitors"
    },
   ],
   socials: [
    {
     name: "Phone",
     icons: "call",
-    link: "unknown",
+    link: "https://api.whatsapp.com/send?phone=628995247491&text=Halo%2C%20Salam%20kenal%20farid%20:)",
     description: "+62 9952 474 91"
    },
    {
     name: "E-Mail",
     icons: "mail",
-    link: "unknown",
+    link: "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C",
     description: "faridfathonin@gmail.com"
    },
    {
     name: "LinkedIn",
     icons: "logo-linkedin",
-    link: "unknown",
+    link: "https://www.linkedin.com/in/farid-fathoni-n-26a48b2b3",
     description: "Farid Fathoni N"
    },
    {
     name: "Facebook",
     icons: "logo-facebook",
-    link: "unknown",
+    link: "https://www.facebook.com/fridfn",
     description: "Rid"
    },
    {
     name: "Instagram",
     icons: "logo-instagram",
-    link: "unknown",
+    link: "https://www.instagram.com/fridfn_?igsh=MWswdmZ1MXM1bWhqYQ==",
     description: "@fridfn_"
    },
   ],
@@ -344,6 +335,50 @@ const metadata = {
      experience: "2+ month experience",
     },
    ]
+  },
+  banner: {
+   profesional: [
+    {
+     title: {
+      one: "Database",
+      sec: "Management"
+     },
+     icons: "logo-buffer",
+     description: "I can handle your data effectively and ensure it is secure"
+    },
+    {
+     title: {
+      one: "Website",
+      sec: "Design"
+     },
+     icons: "images",
+     description: "I can bring your best design ideas to life with precision and creativity"
+    },
+    {
+     title: {
+      one: "Project",
+      sec: "Management"
+     },
+     icons: "people",
+     description: "I can lead teams to deliver successful projects on time"
+    },
+    {
+     title: {
+      one: "Critical",
+      sec: "Thingking"
+     },
+     icons: "bulb",
+     description: "I can able to analyze problems and provide logical solutions"
+    },
+    {
+     title: {
+      one: "Team",
+      sec: "Collaboration"
+     },
+     icons: "people",
+     description: "I can collaborate well in a team by actively contributing and listening to others"
+    }
+   ]
   }
  },
  images: {
@@ -357,7 +392,10 @@ const metadata = {
   mysql: mysql,
   php: php,
   mongodb: mongodb,
-  git: git
+  git: git,
+  nayla: nayla,
+  dede: dede,
+  peter: peter,
  }
 }
 

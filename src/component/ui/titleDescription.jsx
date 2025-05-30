@@ -24,7 +24,7 @@ const Description = () => {
      This diverse background gives me the flexibility to adapt to a wide range of project needs.
      <br></br>
      <br></br>
-     I look forward to collaborating <b>with you!</b>
+     I look forward to collaborating <b>WITH YOU!</b>
     </p>
    </div>
   )

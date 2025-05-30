@@ -739,6 +739,12 @@ span div .description, .wrapper-bar .description {
  font-size: var(--big-font-title);
 }
 
+.banner .description {
+ text-align: center;
+ width: 80%;
+ line-height: 15px;
+}
+
 .banner .description, .container-language .wrapper .description {
  font-weight: 500;
  color: var(--primary-icon)!important;

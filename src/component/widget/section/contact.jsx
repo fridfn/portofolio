@@ -10,7 +10,10 @@ export const Socials = ({ data }) => {
    <div className="social-media">
     <div className="items">
      <ion-icon className="icon" name={ icons }></ion-icon>
-     <div className="wrapper">
+     <div className="wrapper"
+      style={{ cursor: 'pointer' }}
+      onClick={() => window.open(link, "_blank")}
+      >
       <p className="title">{ name }</p>
       <p className="description">{ description }</p>
      </div>

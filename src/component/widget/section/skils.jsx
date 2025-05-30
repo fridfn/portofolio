@@ -6,6 +6,7 @@ import UseListing from "@/utils/useListing"
 import Language from "@/component/ui/language"
 
 const Skils = ({ data }) => {
+  const PROFESIONAL_STACK = metadata.personal.banner.profesional
   const BACKEND_STACK = metadata.personal.skills.backend
   const FRONTEND_STACK = metadata.personal.skills.frontend
   const OTHER_STACK = metadata.personal.skills.other
@@ -22,7 +23,7 @@ const Skils = ({ data }) => {
     <div className="content-progress">
      <div className="wrapper-content">
       <p className="title">Profesional</p>
-      <UseSwiper data={["lol", "lol", "lol"]} type="banner" />
+      <UseSwiper data={PROFESIONAL_STACK} type="banner" />
      </div>
      <div className="wrapper-content" id="skills">
       <p className="title">Backend</p>
