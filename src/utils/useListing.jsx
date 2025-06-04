@@ -18,7 +18,6 @@ const ComponentList = {
 }
 
 const UseListing = ({ component, scroll, type }) => {
-  
   const ComponentRender = ComponentList?.[type]
   const items = component;
   const [visibleItems, setVisibleItems] = useState(items.slice(0, 4))

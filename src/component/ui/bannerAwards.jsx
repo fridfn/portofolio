@@ -1,6 +1,7 @@
 import React from "react"
 
-const BannerAwards = ({ data }) => {
+const BannerAwards = ({ data, action}) => {
+  
   return (
    <div className="banner">
     <div className="box-icon">
@@ -13,7 +14,11 @@ const BannerAwards = ({ data }) => {
       <ion-icon name="business"></ion-icon>
       <p className="description">Oct 2022</p>
      </div>
-     <ion-icon className="forwards" name="business"></ion-icon>
+     <ion-icon
+      className="forwards"
+      name="business"
+      onClick={() => action(true)}>
+     </ion-icon>
     </div>
    </div>
   )

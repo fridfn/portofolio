@@ -1,0 +1,21 @@
+{
+  "name": "Farid Fathoni N",
+  "short_name": "Farid Fn",
+  "description": "a portofolio website about Farid Fathoni N and more information about him",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1A1A1A",
+  "theme_color": "#252525",
+  "icons": [
+    {
+      "src": "/src/assets/profile_pict.jpg",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/src/assets/profile_pict.jpg",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import EachUtils from "@/utils/EachUtils"
 import BubbleSelected from "@/component/ui/bubbleSelected"
 
 const CardsProject = ({ data }) => {
-  const { name, icons, image, type, stack, description } = data;
+  const { name, icons, image, type, stack, link, description } = data;
   
   return (
    <div className="cards-project">
@@ -35,10 +35,15 @@ const CardsProject = ({ data }) => {
      <EachUtils
        of={icons}
        render={(value, index) => (
-        <ion-icon key={index} className="icon" name={value}></ion-icon>
+        <ion-icon 
+          key={index}
+          name={value}
+          className="icon"
+          onClick={() => window.location.href = link?.[index]}>
+        </ion-icon>
        )}/>
      </span>
-      <ion-icon className="icon" name="layers"></ion-icon>
+      <ion-icon className="icon" name="camera"></ion-icon>
     </div>
    </div>
   )

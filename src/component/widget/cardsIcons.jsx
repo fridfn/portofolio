@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 const CardsIcons = ({ data }) => {
   const{ icons, total, description } = data;
@@ -6,7 +6,7 @@ const CardsIcons = ({ data }) => {
    <>
     <div className="cards-icons">
      <ion-icon className="icon" name={ icons }></ion-icon>
-     <p className="title">{ total }</p>
+     <p className="title">{ total.toLocaleString() }</p>
      <p className="description">{ description }</p>
     </div>
    </>

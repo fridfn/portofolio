@@ -22,39 +22,48 @@ const Cards = ({ data, index }) => {
 }
 
 export const CardsExperience = ({ data }) => {
+  const { title, from, logo, date: { ins, out } = {}, achievement, description: { one, sec } = {}, stack } = data;
+  
   return (
    <div className="cards-experience">
     <div className="experience-header-title">
-     <p className="title">
-      Senior Frontend Developer Company
-     </p>
-     <span>
-      <div>
-       <ion-icon name="business"></ion-icon>
-       <p className="description">Google Studio</p>
-      </div>
-      <div className="date">
-       <p className="date-experience">Oct 2023 ➔ Jan 2025</p>
-      </div>
-     </span>
-     <Avatar name="avatar" />
+     <p className="title">{title}</p>
+     {from ? (
+      <>
+       <span>
+        <div>
+         <ion-icon name="business"></ion-icon>
+         <p className="description">{from}</p>
+        </div>
+        <div className="date">
+         <p className="date-experience">{ins} ➔ {out}</p>
+        </div>
+       </span>
+       <Avatar name={logo} />
+      </>) :
+     (null)}
     </div>
+    {from ? (
     <div className="experience-description">
-     <p className="description">excepteur excepteur qui mollit nostrud adipisicing aliqua proident exercitation labore aliqua laborum amet quis sunt veniam ut labore aute Lorem</p>
+     <p className="description">{one}</p>
      <ul className="list-experience">
-      <li className="description items-list">Machine Learning</li>
-      <li className="description items-list">Natural Leanguage Processing (NLP)</li>
-      <li className="description items-list">Neural Networks</li>
-     </ul>
-     <p className="description">excepteur excepteur qui mollit nostrud adipisicing aliqua proident exercitation labore aliqua laborum amet quis sunt veniam ut labore aute Lorem</p>
-     <div className="list">
       <EachUtils
-       of={["1", "2", "3"]}
+       of={achievement}
        render={(value, index) => (
-        <BubbleSelected key={index} />
-       )}/>
-     </div>
-    </div>
+        <li key={index} className="description items-list">{value}</li>
+      )}/>
+     </ul>
+     <p className="description">{sec}</p>
+     {stack ? (
+      <div className="list">
+       <EachUtils
+        of={["1", "2", "3"]}
+        render={(value, index) => (
+         <BubbleSelected key={index} />
+        )}/>
+      </div>) : (null)
+     }
+    </div>) : (null)}
    </div>
   )
 }

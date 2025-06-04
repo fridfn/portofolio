@@ -11,6 +11,7 @@ const Pagination = ({ data }) => {
   const switchPages = ( datas ) => {
    setIsActive(datas.value)
    navigate(datas.routes)
+   scrollTo({behavior: 'auto', top: 0})
   }
   
   return (

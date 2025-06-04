@@ -13,8 +13,12 @@ import javascript from "@/assets/logo/javascript.webp"
 import react from "@/assets/logo/react.webp"
 import tailwind from "@/assets/logo/tailwind.webp"
 import nayla from "@/assets/logo/nayla.webp"
+import fridfn from "@/assets/logo/fridfn.jpg"
 import dede from "@/assets/logo/dede.webp"
 import peter from "@/assets/logo/peter.webp"
+import yapin from "@/assets/logo/yapin.jpg"
+import sdn from "@/assets/logo/sdn.jpg"
+import alhuda from "@/assets/logo/alhuda.jpg"
 
 const metadata = {
  personal: {
@@ -47,7 +51,7 @@ const metadata = {
    {
     icons: 'people',
     title: 'Hangout & Friends',
-    description: 'Hangout with friends is another healing me, cause you can talk alot'
+    description: 'Hangout with friends is another healing for me, cause you can talk alot'
    },
    {
     icons: 'mic',
@@ -76,7 +80,7 @@ const metadata = {
    {
     client: "Peter",
     avatar: "peter",
-    from: "Frontend Devoper Freelancer",
+    from: "Frontend Freelancer",
     comment: "Farid was a fantastic teammate. He’s proactive, skilled, and always willing to support the team. Collaborating with him made our work more efficient and enjoyable."
    },
   ],
@@ -106,46 +110,171 @@ const metadata = {
     image: "mysql",
     type: "Web Apps",
     year: "Oct 2022",
-    icons: ["logo-github", "logo-facebook", "link"],
+    icons: ["logo-github", "mail", "link"],
+    photo: [avatar, avatar, avatar, avatar],
+    link: ["https://github.com/fridfn", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://exfavorite-website-development.vercel.app/"],
     stack: ["javascript", "Sass", "React"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
    {
-    name: "Fabot Apps",
+    name: "Fandom V-Tuber",
     image: "mysql",
     type: "Web Apps",
     year: "Oct 2022",
-    icons: ["logo-github", "logo-facebook", "link"],
+    icons: ["logo-github", "mail", "link"],
+    photo: [avatar, avatar, avatar, avatar],
+    link: ["https://github.com/fridfn", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://exfandom.vercel.app/"],
     stack: ["javascript", "Css", "HTML5"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
    {
-    name: "Clothing Shop",
+    name: "Youtube Website",
     image: "mysql",
     type: "E-Comerce",
     year: "Oct 2022",
-    icons: ["logo-github", "logo-facebook", "link"],
+    icons: ["logo-github", "mail", "link"],
+    photo: [avatar, avatar, avatar, avatar],
+    link: ["https://github.com/fridfn", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://exyoutube.vercel.app/"],
     stack: ["PHP", "Css", "HTML5", "MySQL"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
    {
-    name: "Shorts Web",
+    name: "Fabot App's",
     image: "mysql",
     type: "Design",
     year: "Oct 2022",
-    icons: ["logo-github", "logo-facebook", "link"],
+    icons: ["logo-github", "mail", "link"],
+    photo: [avatar, avatar, avatar, avatar],
+    link: ["https://github.com/fridfn", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://fabot-apps.vercel.app/"],
     stack: ["Css", "HTML5"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
    {
-    name: "Ensiklopedia Dinosaurs",
+    name: "Birthday Gift",
     image: "mysql",
     year: "Oct 2022",
     type: "Information",
-    icons: ["logo-github", "logo-facebook", "link"],
+    icons: ["logo-github", "mail", "link"],
+    photo: [avatar, avatar, avatar, avatar],
+    link: ["https://github.com/fridfn", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://asyla.vercel.app/"],
     stack: ["React", "Sass", "Css", "HTML5"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
+  ],
+  experience: [
+   {
+    title: "Elementary School Students at SDN Jatimulya",
+    from: "SDN Jatimulya 01",
+    date: {
+     ins: "July 2013",
+     out: "July 2019"
+    },
+    achievement: [
+     "SD OSIS Member",
+     "Rangking 6 in class 6th",
+     "Diligent students / Most active",
+    ],
+    description: {
+     one: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do ut labore ea quis laborum excepteur exercitation elit aliquip sit",
+     sec: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do incididunt qui incididunt magna consequat labore ex ut exercitation qui",
+    },
+   },
+   {
+    title: "Elementary School Students at SDN Jatimulya",
+    from: "SDN Jatimulya 01",
+    date: {
+     ins: "July 2013",
+     out: "July 2019"
+    },
+    achievement: [
+     "SD OSIS Member",
+     "Rangking 6 in class 6th",
+     "Diligent students / Most active",
+    ],
+    description: {
+     one: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do ut labore ea quis laborum excepteur exercitation elit aliquip sit",
+     sec: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do incididunt qui incididunt magna consequat labore ex ut exercitation qui",
+    },
+   },
+   {
+    title: "Elementary School Students at SDN Jatimulya",
+    from: "SDN Jatimulya 01",
+    date: {
+     ins: "July 2013",
+     out: "July 2019"
+    },
+    achievement: [
+     "SD OSIS Member",
+     "Rangking 6 in class 6th",
+     "Diligent students / Most active",
+    ],
+    description: {
+     one: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do ut labore ea quis laborum excepteur exercitation elit aliquip sit",
+     sec: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do incididunt qui incididunt magna consequat labore ex ut exercitation qui",
+    },
+   },
+   {
+    title: "Coming Soon"
+   }
+  ],
+  education: [
+   {
+    title: "Elementary School Students at SDN Jatimulya",
+    logo: "sdn",
+    from: "SDN Jatimulya 01",
+    date: {
+     ins: "July 2013",
+     out: "July 2019"
+    },
+    achievement: [
+     "SD OSIS Member",
+     "Rangking 6 in class 6th",
+     "Diligent students / Most active",
+    ],
+    description: {
+     one: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do ut labore ea quis laborum excepteur exercitation elit aliquip sit",
+     sec: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do incididunt qui incididunt magna consequat labore ex ut exercitation qui",
+    },
+   },
+   {
+    title: "Middle School at SMP Islam Al Huda",
+    logo: "alhuda",
+    from: "SMP Islam Al - Huda",
+    date: {
+     ins: "July 2019",
+     out: "July 2022"
+    },
+    achievement: [
+     "SD OSIS Member",
+     "Rangking 6 in class 6th",
+     "Diligent students / Most active",
+    ],
+    description: {
+     one: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do ut labore ea quis laborum excepteur exercitation elit aliquip sit",
+     sec: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do incididunt qui incididunt magna consequat labore ex ut exercitation qui",
+    },
+   },
+   {
+    title: "Vocational High School at SMK Yapin Bekasi",
+    logo: "yapin",
+    from: "SMK Yapin Bekasi",
+    date: {
+     ins: "July 2022",
+     out: "July 2025"
+    },
+    achievement: [
+     "SD OSIS Member",
+     "Rangking 6 in class 6th",
+     "Diligent students / Most active",
+    ],
+    description: {
+     one: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do ut labore ea quis laborum excepteur exercitation elit aliquip sit",
+     sec: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do incididunt qui incididunt magna consequat labore ex ut exercitation qui",
+    },
+   },
+   {
+    title: "Coming Soon"
+   }
   ],
   facts: [
    {
@@ -201,7 +330,7 @@ const metadata = {
     description: "Leanguages Speak"
    },
    {
-    total: 290.506,
+    total: 290506,
     icons: "eye",
     description: "Public Visitors"
    },
@@ -211,7 +340,7 @@ const metadata = {
     name: "Phone",
     icons: "call",
     link: "https://api.whatsapp.com/send?phone=628995247491&text=Halo%2C%20Salam%20kenal%20farid%20:)",
-    description: "+62 9952 474 91"
+    description: "+62 899 5247 491"
    },
    {
     name: "E-Mail",
@@ -394,8 +523,12 @@ const metadata = {
   mongodb: mongodb,
   git: git,
   nayla: nayla,
+  fridfn: fridfn,
   dede: dede,
   peter: peter,
+  sdn: sdn,
+  yapin: yapin,
+  alhuda: alhuda,
  }
 }
 

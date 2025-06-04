@@ -15,7 +15,7 @@ const ComponentList = {
  updates: CardsIcons
 }
 
-const UseSwiper = ({ data, type, view }) => {
+const UseSwiper = ({ data, type, view, action }) => {
   const ComponentSwiper = ComponentList?.[type]
   
   return (
@@ -29,7 +29,7 @@ const UseSwiper = ({ data, type, view }) => {
      modules={[ Pagination, Navigation, Autoplay ]}>
      {data.map((render, index) => (
       <SwiperSlide key={index}>
-       <ComponentSwiper data={render} key={index}/>
+       <ComponentSwiper data={render} key={index} action={action} />
       </SwiperSlide>
      ))}
     </Swiper>
