@@ -22,7 +22,7 @@ const Updates = ({ data }) => {
      </div>
      <div className="wrapper-content" id="updates">
       <p className="title">Quick Facts</p>
-      <UseListing component={QUICK_FATCS} type="awards" />
+      <UseListing data={QUICK_FATCS} type="awards" />
      </div>
     </div>
    </>

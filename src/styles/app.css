@@ -39,7 +39,7 @@ span div .description {
 }
 
 .button, .title, .navbar, .pagination, .pagination .items, .experience-header-title span, .bubble-items, .experience-description .list, .banner, .container-language, .banner .information, .banner
-.information .items, .cards-icons {
+.information .items, .cards-icons, .popup .heading-popup, .popup .wrapper button, .popup .wrapper, .popup .content, .container-popup {
  display: flex;
  align-items: center;
  justify-content: center;
@@ -53,7 +53,7 @@ span div .description {
  flex-direction: column;
 }
 
-.bubble, .wrapper, .client-info, .cards, .infinite-scroll-component, .experience-header-title {
+.bubble, .wrapper, .client-info, .cards, .infinite-scroll-component, .experience-header-title, .popup {
  gap: 5px;
  display: flex;
  align-items: center;
@@ -89,7 +89,7 @@ span div .description {
  border-radius: var(--primary-border-radius);
 }
 
-.wrapper-action {
+.wrapper-action, .popup .heading-popup {
  width: 100%;
  display: flex;
  justify-content: space-between;
@@ -360,6 +360,7 @@ span div .description {
 }
 
 .navbar {
+ left: 0;
  bottom: 0;
  z-index: 20;
  width: 100%;
@@ -724,7 +725,7 @@ span div .description {
 
 .banner .information .items {
  gap: 5px;
- padding: 0px 18px;
+ padding: 3px 24px;
  border-radius: 7px;
  font-size: var(--secondary-font-size);
  color: var(--description-text)!important;
@@ -940,4 +941,63 @@ span div .description {
 
 #skills .infinite-scroll-component__outerdiv .infinite-scroll-component {
  gap: 10px;
+}
+
+.container-popup {
+ inset: 0;
+ z-index: 100;
+ height: 100dvh;
+ position: fixed;
+ align-items: start;
+ backdrop-filter: blur(5px);
+}
+
+.popup {
+ gap: 35px;
+ padding: 25px;
+ margin-top: 15%;
+ border-radius: 15px;
+ border: 2px solid #353535;
+ background-color: var(--bubble-color);
+}
+
+.popup .wrapper {
+ width: 100%;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.popup .wrapper button {
+ width: 90px;
+ padding: 5px;
+ font-weight: 500;
+ border: 0px solid;
+ border-radius: 5px;
+ align-items: center;
+ justify-content: space-around;
+ color: var(--primary-background);
+ background-color: var(--color);
+}
+
+.heading-popup .title {
+ font-size: var(--primary-size-icon);
+}
+
+.heading-popup .icon {
+ font-size: var(--primary-font-size);
+}
+
+.popup .wrapper button .icon {
+ font-size: var(--big-font-title);
+}
+
+.popup .content {
+ gap: 15px;
+ text-align: center;
+ flex-direction: column;
+ font-size: var(--description-font-size);
+}
+
+.popup .content .description {
+ color: var(--color)!important;
 }

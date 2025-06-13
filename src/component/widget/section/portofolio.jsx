@@ -16,7 +16,7 @@ const Portofolio = ({ data }) => {
      </span>
      <div className="wrapper-content">
       <p className="title">Project</p>
-      <UseListing component={PROJECT_LIST} type="project" />
+      <UseListing data={PROJECT_LIST} type="project" />
      </div>
     </div>
    </>

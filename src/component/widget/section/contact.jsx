@@ -39,7 +39,7 @@ const Contact = ({ data }) => {
      </div>
      <div className="wrapper-content" id="socials">
       <p className="title">Or If You <span id="hightlight">Prefer</span></p>
-      <UseListing component={SOCIAL_MEDIA} type="socials" />
+      <UseListing data={SOCIAL_MEDIA} type="socials" />
      </div>
     </div>
    </>

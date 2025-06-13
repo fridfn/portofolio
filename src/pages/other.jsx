@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Header from "@/component/header"
 import Navbar from "@/component/widget/navbar"
 import Pagination from "@/component/ui/pagination"
@@ -6,29 +6,24 @@ import Updates from "@/component/widget/section/updates"
 import Contact from "@/component/widget/section/contact"
 import { motion, AnimatePresence } from "framer-motion"
 
-const datas = {
- title: "Skills",
- icons: ["school", "briefcase"]
-}
-
-const pagination = [
- {
-  icon: "logo-rss",
-  component: Updates,
-  routes: "/other/updates"
- },
- {
-  icon: "create-sharp",
-  component: Contact,
-  routes: "/other/contact"
- },
-]
-
+ const pagination = [
+  {
+   icon: "logo-rss",
+   component: Updates,
+   routes: "/other/updates",
+  },
+  {
+   icon: "create-sharp",
+   component: Contact,
+   routes: "/other/contact",
+  },
+ ]
+ 
 const Other = ({ data }) => {
   
   const ComponentPages = {
-   "updates": pagination[0].component,
-   "contact": pagination[1].component,
+   updates: Updates,
+   contact: Contact,
   }
   const ViewedPages = ComponentPages[data];
   

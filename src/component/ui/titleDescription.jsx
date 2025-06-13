@@ -53,7 +53,7 @@ const TitleDescription = ({ icons, type, title, count }) => {
     <div className='content'>
      {icons ? (<LogoIcons />) : (null)}
      {count ?
-      (<UseListing component={count} type="cards"/>) :
+      (<UseListing data={count} type="cards"/>) :
       (<ResultComponent data={ResultData} type="cards" />)
      }
     </div>

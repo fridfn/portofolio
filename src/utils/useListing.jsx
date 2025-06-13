@@ -17,9 +17,9 @@ const ComponentList = {
  project: CardsProject,
 }
 
-const UseListing = ({ component, scroll, type }) => {
+const UseListing = ({ data, scroll, type }) => {
   const ComponentRender = ComponentList?.[type]
-  const items = component;
+  const items = data;
   const [visibleItems, setVisibleItems] = useState(items.slice(0, 4))
   const [hasMore, setHasMore] = useState(true)
   
@@ -30,7 +30,7 @@ const UseListing = ({ component, scroll, type }) => {
   }
   
   useEffect(() => {
-   setHasMore(component.length !== visibleItems.length ? true : false)
+   setHasMore(data.length !== visibleItems.length ? true : false)
   }, [visibleItems])
   
   return (

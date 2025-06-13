@@ -21,17 +21,17 @@ const UseSwiper = ({ data, type, view, action }) => {
   return (
    <div>
     <Swiper
-     loop={true}
-     spaceBetween={50}
-     slidesPerView={view}
-     autoplay={{ delay: 3000 }}
-     pagination={{ clickable: true }}
-     modules={[ Pagination, Navigation, Autoplay ]}>
-     {data.map((render, index) => (
-      <SwiperSlide key={index}>
-       <ComponentSwiper data={render} key={index} action={action} />
-      </SwiperSlide>
-     ))}
+      loop={true}
+      spaceBetween={50}
+      slidesPerView={view}
+      autoplay={{ delay: 3000 }}
+      pagination={{ clickable: true }}
+      modules={[ Pagination, Navigation, Autoplay ]}>
+      {data.map((value, index) => (
+       <SwiperSlide key={index}>
+        <ComponentSwiper data={value} key={index} action={action} index={index} />
+       </SwiperSlide>
+      ))}
     </Swiper>
    </div>
  );

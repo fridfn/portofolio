@@ -1,4 +1,5 @@
 import React from "react"
+import EachUtils from "@/utils/EachUtils"
 import Avatar from "@/component/ui/avatar"
 import BubbleSelected from "@/component/ui/bubbleSelected"
 
@@ -12,18 +13,22 @@ const CardsAwards = ({ data }) => {
       { name }
      </p>
      <p id="hightlight">
-      -{ highlight }
+      { highlight }
      </p>
      <span>
-      <div className="items">
-       <ion-icon name={ icons }></ion-icon>
-       <p className="description">{ type }</p>
-      </div>
-      { year ? (
+     <EachUtils
+      of={type}
+      render={(value, index) => (
+       <div className="items" key={index}>
+         <ion-icon name={ icons }></ion-icon>
+         <p className="description">{ value }</p>
+       </div>
+      )}/>
+      { year && (
       <div className="items">
        <ion-icon name={ icons }></ion-icon>
        <p className="description">{ year }</p>
-      </div>) : ( null )}
+      </div>)}
      </span>
     </div>
     <div className="experience-description">

@@ -161,57 +161,128 @@ const metadata = {
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
   ],
+  awards: [
+   {
+    id: 1,
+    title: {
+     one: "Webites",
+     sec: "Application"
+    },
+    link: "https://github.com/fridfn",
+    description: "I can handle your data effectively"
+   },
+   {
+    id: 2,
+    title: {
+     one: "Web Apps",
+     sec: "Application"
+    },
+    link: "https://github.com/fridfz",
+    description: "I can handle your data effectively"
+   },
+  ],
+  awards_facts: [
+   {
+    name: "Reminder App's",
+    icons: "mail",
+    image: "mysql",
+    type: ["Web Apps", "Application"],
+    description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
+   },
+  ],
   experience: [
    {
-    title: "Elementary School Students at SDN Jatimulya",
+    title: "Self-Taught Journey Begins",
     from: "SDN Jatimulya 01",
     date: {
-     ins: "July 2013",
-     out: "July 2019"
+     ins: "October 2022",
+     out: "Until Now"
     },
     achievement: [
-     "SD OSIS Member",
-     "Rangking 6 in class 6th",
-     "Diligent students / Most active",
+     "HTML",
+     "CSS",
+     "JAVASCRIPT",
     ],
     description: {
-     one: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do ut labore ea quis laborum excepteur exercitation elit aliquip sit",
-     sec: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do incididunt qui incididunt magna consequat labore ex ut exercitation qui",
+     one: "I started my journey of learning in the world of programming autodidactically. Starting from curiosity about how websites work",
+     sec: "I began to dive into the world of HTML, CSS, and JavaScript through documentation, YouTube videos from youtuber Dea Afrizal ✨",
     },
+    quote: "Aku nggak tahu harus mulai dari mana, tapi aku tahu harus terus mulai.",
    },
    {
-    title: "Elementary School Students at SDN Jatimulya",
+    title: "Tinkering from a Limited Environment",
     from: "SDN Jatimulya 01",
     date: {
-     ins: "July 2013",
-     out: "July 2019"
+     ins: "July 2023",
+     out: "Until Now"
     },
     achievement: [
-     "SD OSIS Member",
-     "Rangking 6 in class 6th",
-     "Diligent students / Most active",
+     "Termux",
+     "Podman",
+     "Userland",
+     "Ubuntu (proot)",
     ],
     description: {
-     one: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do ut labore ea quis laborum excepteur exercitation elit aliquip sit",
-     sec: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do incididunt qui incididunt magna consequat labore ex ut exercitation qui",
+     one: "Due to device limitations, I learned to run a Linux environment using Termux and proot. From there I learned a lot about operating systems, package management, and small implementations through Podman.",
+     sec: "There were many challenges, but it made me understand more about the breadth of understanding the world of coding itself.",
     },
+    quote: "Bukan alatnya yang membatasi, tapi niatnya.",
    },
    {
-    title: "Elementary School Students at SDN Jatimulya",
+    title: "Project Panel Game Server – Pterodactyl",
     from: "SDN Jatimulya 01",
     date: {
-     ins: "July 2013",
-     out: "July 2019"
+     ins: "December 2024",
+     out: "Febuary 2025"
     },
     achievement: [
-     "SD OSIS Member",
-     "Rangking 6 in class 6th",
-     "Diligent students / Most active",
+     "Pterodactyl Panel",
+     "Wings",
+     "Docker",
+     "Gitpod",
     ],
     description: {
-     one: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do ut labore ea quis laborum excepteur exercitation elit aliquip sit",
-     sec: "minim ipsum voluptate commodo qui pariatur commodo pariatur culpa do incididunt qui incididunt magna consequat labore ex ut exercitation qui",
+     one: "I challenged myself to build a game server using Pterodactyl Panel. Since Termux doesn’t support Docker, I learned to separate environments: run the panel in Termux, and Wings in another place like Gitpod.",
+     sec: "This experience made me more familiar with real-world deployment, networking, and debugging.",
     },
+    quote: "Satu error, seribu pelajaran."
+   },
+   {
+    title: "First Steps in Front-End – React & Particles",
+    from: "SDN Jatimulya 01",
+    date: {
+     ins: "December 2024",
+     out: "Until Now"
+    },
+    achievement: [
+     "React",
+     "Vite",
+     "ParticlesJs",
+    ],
+    description: {
+     one: "This year was the starting point for me to learn React for the first time. Although I was new to the world of React, I immediately dared to use more complex tools such as Particles.js to beautify the appearance.",
+     sec: "In this phase, I focused on understanding the basics of React such as components, props, and state, while also trying to make the appearance more attractive with particle animations.",
+    },
+    quote: "Meskipun baru mulai, aku nggak takut buat mencoba hal yang terlihat rumit."
+   },
+   {
+    title: "First Project – Website from Figma Design",
+    from: "SDN Jatimulya 01",
+    date: {
+     ins: "May 2024",
+     out: "May 2024"
+    },
+    achievement: [
+     "PHP",
+     "CSS",
+     "MySQL",
+     "JAVASCRIPT",
+    ],
+    description: {
+     one: "The year 2024 was a significant moment because I got my first project from outside—working on a website based on a given Figma design. Although this project was a school assignment from another institution (assignment jockey)",
+     sec: "This is where I first worked on someone else's request, completing a project from scratch, and getting paid for my hard work. I developed the website using PHP for the backend logic, MySQL as the database, and CSS for the appearance.",
+    },
+    quote: "Pengalaman pertama ini membuka pintu ke dunia nyata: bahwa skill yang kupelajari bisa benar-benar bermanfaat dan dihargai."
    },
    {
     title: "Coming Soon"
@@ -273,7 +344,7 @@ const metadata = {
     },
    },
    {
-    title: "Coming Soon"
+    title: "Looking For Job or Become a Freelancer"
    }
   ],
   facts: [
@@ -281,7 +352,7 @@ const metadata = {
     name: "Working And Development ",
     highlight: "Use Mobile Device",
     icons: "time",
-    type: "Web Apps",
+    type: ["javascript", "Sass", "React"],
     stack: ["javascript", "Sass", "React"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
@@ -472,6 +543,7 @@ const metadata = {
       one: "Database",
       sec: "Management"
      },
+     link: "https://github.com/fridfn",
      icons: "logo-buffer",
      description: "I can handle your data effectively and ensure it is secure"
     },
@@ -481,6 +553,7 @@ const metadata = {
       sec: "Design"
      },
      icons: "images",
+     link: "https://github.com/fridfn",
      description: "I can bring your best design ideas to life with precision and creativity"
     },
     {
@@ -489,6 +562,7 @@ const metadata = {
       sec: "Management"
      },
      icons: "people",
+     link: "https://github.com/fridfn",
      description: "I can lead teams to deliver successful projects on time"
     },
     {
@@ -497,6 +571,7 @@ const metadata = {
       sec: "Thingking"
      },
      icons: "bulb",
+     link: "https://github.com/fridfn",
      description: "I can able to analyze problems and provide logical solutions"
     },
     {
@@ -505,6 +580,7 @@ const metadata = {
       sec: "Collaboration"
      },
      icons: "people",
+     link: "https://github.com/fridfn",
      description: "I can collaborate well in a team by actively contributing and listening to others"
     }
    ]

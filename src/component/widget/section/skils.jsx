@@ -27,19 +27,19 @@ const Skils = ({ data }) => {
      </div>
      <div className="wrapper-content" id="skills">
       <p className="title">Backend</p>
-      <UseListing component={BACKEND_STACK} type="progress" />
+      <UseListing data={BACKEND_STACK} type="progress" />
      </div>
      <div className="wrapper-content" id="skills">
       <p className="title">Frontend</p>
-      <UseListing component={FRONTEND_STACK} type="progress" />
+      <UseListing data={FRONTEND_STACK} type="progress" />
      </div>
      <div className="wrapper-content" id="skills">
       <p className="title">Other Skills</p>
-      <UseListing component={OTHER_STACK} type="progress" />
+      <UseListing data={OTHER_STACK} type="progress" />
      </div>
      <div className="wrapper-content" id="skills">
       <p className="title">Languages</p>
-      <UseListing component={LANGUAGE_STACK} type="language" />
+      <UseListing data={LANGUAGE_STACK} type="language" />
      </div>
     </div>
    </div>
