@@ -1,7 +1,7 @@
 import React from "react"
 
 const BannerAwards = ({ data, action, index }) => {
-  const { title: { one, sec }, description, link } = data;
+  const { title: { one, sec }, description, link, icons: { main, secon } } = data;
   
   return (
    <div className="banner">
@@ -12,12 +12,12 @@ const BannerAwards = ({ data, action, index }) => {
     <p className="description">{ description }</p>
     <div className="information">
      <div className="items">
-      <ion-icon name="business"></ion-icon>
-      <p className="description">Oct 2022</p>
+      <ion-icon name={secon}></ion-icon>
+      <p className="description">ChatGPT</p>
      </div>
      <ion-icon
       className="forwards"
-      name="business"
+      name={main}
       onClick={() => {
        action({
          action: "redirect",

@@ -17,7 +17,6 @@ const ComponentList = {
 
 const UseSwiper = ({ data, type, view, action }) => {
   const ComponentSwiper = ComponentList?.[type]
-  
   return (
    <div>
     <Swiper

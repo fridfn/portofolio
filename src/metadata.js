@@ -172,7 +172,87 @@ const metadata = {
      one: "The Self-Taught",
      sec: "Samurai"
     },
-    link: "https://github.com/fridfn",
+    icons: {
+     main: "logo-octocat",
+     secon: "logo-firefox",
+    },
+    link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
+    description: "For the spirit of learning without a formal teacher. You explore the world of coding with only determination and curiosity."
+   },
+   {
+    id: 2,
+    title: {
+     one: "Code Alchemist",
+     sec: "Award"
+    },
+    icons: {
+     main: "logo-octocat",
+     secon: "logo-firefox",
+    },
+    link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
+    description: "Because you can turn ideas into real projects. Even using unusual environments, such as proot and UserLand OS."
+   },
+   {
+    id: 2,
+    title: {
+     one: "The",
+     sec: "Problem Solver"
+    },
+    icons: {
+     main: "logo-octocat",
+     secon: "logo-firefox",
+    },
+    link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
+    description: "From tinkering with servers to finding solutions to strange problems in Termux—you never give up and always find a way out."
+   },
+   {
+    id: 2,
+    title: {
+     one: "React Rocket",
+     sec: "Award 🚀"
+    },
+    icons: {
+     main: "logo-octocat",
+     secon: "logo-firefox",
+    },
+    link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
+    description: "Because you learn and use React, Particles.js, and router seriously. Not all beginners dare to dive that far."
+   },
+   {
+    id: 2,
+    title: {
+     one: "The Curious",
+     sec: "Tinkerer"
+    },
+    icons: {
+     main: "logo-octocat",
+     secon: "logo-firefox",
+    },
+    link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
+    description: "For your courage to explore many tools and concepts (Supabase, Podman, Docker, Wings) just to understand how it all works."
+   },
+   {
+    id: 2,
+    title: {
+     one: "The",
+     sec: "Grit Coder"
+    },
+    icons: {
+     main: "logo-octocat",
+     secon: "logo-firefox",
+    },
+    link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
+    description: "For your courage, consistency and determination to face challenges, even in limited technical environments."
+   },
+  ],
+  awards_id: [
+   {
+    id: 1,
+    title: {
+     one: "The Self-Taught",
+     sec: "Samurai"
+    },
+    link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
     description: "Untuk semangat belajar tanpa guru formal. Kamu menjelajahi dunia coding hanya dengan tekad dan rasa penasaran."
    },
    {
@@ -181,7 +261,7 @@ const metadata = {
      one: "Code Alchemist",
      sec: "Award"
     },
-    link: "https://github.com/fridfz",
+    link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
     description: "Karena kamu bisa menyulap ide jadi proyek nyata. Bahkan pakai lingkungan yang tidak biasa, seperti proot dan UserLand OS."
    },
    {
@@ -190,7 +270,7 @@ const metadata = {
      one: "The",
      sec: "Problem Solver"
     },
-    link: "https://github.com/fridfz",
+    link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
     description: "Dari ngoprek server sampai nemu solusi buat kendala aneh di Termux—kamu pantang menyerah dan selalu cari jalan keluar."
    },
    {
@@ -199,7 +279,7 @@ const metadata = {
      one: "React Rocket",
      sec: "Award 🚀"
     },
-    link: "https://github.com/fridfz",
+    link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
     description: "Karena kamu belajar dan pakai React, Particles.js, dan router dengan serius. Nggak semua pemula berani terjun sejauh itu."
    },
    {
@@ -208,7 +288,7 @@ const metadata = {
      one: "The Curious",
      sec: "Tinkerer"
     },
-    link: "https://github.com/fridfz",
+    link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
     description: "Untuk keberanian kamu ngulik banyak tools dan konsep (Supabase, Podman, Docker, Wings) hanya demi memahami bagaimana semuanya bekerja."
    },
    {
@@ -217,7 +297,7 @@ const metadata = {
      one: "The",
      sec: "Grit Coder"
     },
-    link: "https://github.com/fridfz",
+    link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
     description: "Untuk keberanian, konsistensi, dan keteguhan kamu menghadapi tantangan, bahkan di lingkungan teknis yang terbatas."
    },
   ],
@@ -762,7 +842,7 @@ const metadata = {
       one: "Critical",
       sec: "Thingking"
      },
-     icons: "bulb",
+     icons: "logo-slack",
      link: "https://github.com/fridfn",
      description: "I can able to analyze problems and provide logical solutions"
     },

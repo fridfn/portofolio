@@ -2,6 +2,7 @@ import React from "react"
 
 const Banner = ({ data }) => {
   const { title: { one, sec }, description, icons } = data;
+  
   return (
    <div className="banner">
     <div className="box-icon">
