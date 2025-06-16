@@ -22,7 +22,7 @@ const Cards = ({ data, index }) => {
 }
 
 export const CardsExperience = ({ data }) => {
-  const { title, from, logo, date: { ins, out } = {}, achievement, description: { one, sec } = {}, stack } = data;
+  const { title, from, logo, date: { ins, out } = "tidak", achievement, description: { one, sec } = "tidak", stack } = data;
   
   return (
    <div className="cards-experience">

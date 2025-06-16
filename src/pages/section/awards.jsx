@@ -5,7 +5,7 @@ import UseListing from "@/utils/useListing"
 
 const Awards = ({ data, handler }) => {
   const DATA_AWARDS = metadata.personal.awards;
-  const DATA_AWARDS_FACT = metadata.personal.awards_facts
+  const DATA_AWARDS_FACT = metadata.personal.coding_impact
   return (
    <>
     <div
@@ -21,7 +21,7 @@ const Awards = ({ data, handler }) => {
      </div>
      <div className="wrapper-content"
       id="awards">
-      <p className="title"><span id="hightlight">Project </span>Facts</p>
+      <p className="title"><span id="hightlight">Coding </span>impact</p>
       <UseListing data={DATA_AWARDS_FACT} type="awards" />
      </div>
     </div>

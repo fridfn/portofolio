@@ -65,7 +65,10 @@ const Header = () => {
       </div>
      </div>
      <div className='box'>
-      <img className='image' src={getImage('avatar')} />
+      <img 
+       className='image' 
+       src={getImage('avatar')} 
+       onContextMenu={(e) => e.preventDefault()} />
       <Fire />
      </div>
      <div className="wrapper-info">

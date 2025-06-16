@@ -4,26 +4,21 @@ import Avatar from "@/component/ui/avatar"
 import BubbleSelected from "@/component/ui/bubbleSelected"
 
 const CardsAwards = ({ data }) => {
-  const { name, image, year, type, stack, description, icons, highlight } = data;
+  const { title: { one, sec } , image, year, type, stack, description, icons, highlight } = data;
   
   return (
    <div className="cards-awards">
     <div className="experience-header-title">
-     <p className="title">
-      { name }
-     </p>
-     <p id="hightlight">
-      { highlight }
-     </p>
+    <p className="title"><span id="hightlight">{one} </span>{sec}</p>
      <span>
-     <EachUtils
+     { type && (<EachUtils
       of={type}
       render={(value, index) => (
        <div className="items" key={index}>
          <ion-icon name={ icons }></ion-icon>
          <p className="description">{ value }</p>
        </div>
-      )}/>
+      )}/>)}
       { year && (
       <div className="items">
        <ion-icon name={ icons }></ion-icon>

@@ -9,7 +9,7 @@ const Avatar = ({ name }) => {
     <img 
      src={getImage}
      alt='avatar' className='image'
-     onClick={(e) => e.preventDefault()}
+     onContextMenu={(e) => e.preventDefault()}
     />
    </div>
   )

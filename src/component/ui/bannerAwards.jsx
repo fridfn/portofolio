@@ -9,7 +9,7 @@ const BannerAwards = ({ data, action, index }) => {
      <ion-icon className="icon" name="layers"></ion-icon>
     </div>
     <p className="title"><span id="hightlight">{ one }</span>{ sec }</p>
-    <p className="description">{ description }!</p>
+    <p className="description">{ description }</p>
     <div className="information">
      <div className="items">
       <ion-icon name="business"></ion-icon>

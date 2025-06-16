@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-import Header from "@/component/header"
+import Header from "@/component/widget/header"
 import Navbar from "@/component/widget/navbar"
 import { motion, AnimatePresence } from "framer-motion"
-import Education from "@/component/widget/section/education"
-import Experience from "@/component/widget/section/experience"
+import Education from "@/pages/section/education"
+import Experience from "@/pages/section/experience"
 import Pagination from "@/component/ui/pagination"
 
 const datas = {

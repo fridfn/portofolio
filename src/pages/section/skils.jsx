@@ -21,7 +21,7 @@ const Skils = ({ data }) => {
      <p className='title' id='hightlight'>{data.title}</p>
     </span>
     <div className="content-progress">
-     <div className="wrapper-content">
+     <div className="wrapper-content" id="wrapper-content-banner">
       <p className="title">Profesional</p>
       <UseSwiper data={PROFESIONAL_STACK} type="banner" />
      </div>

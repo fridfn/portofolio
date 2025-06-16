@@ -431,6 +431,7 @@ span div .description {
 
 .cards-awards {
  padding: 25px;
+ width: 70%;
  margin-left: 35px;
  text-align: justify;
 }
@@ -458,7 +459,6 @@ span div .description {
 }
 
 .cards-awards .experience-header-title span {
- gap: 0px;
  display: flex;
  flex-direction: row;
 }
@@ -466,7 +466,7 @@ span div .description {
 .cards-awards .experience-header-title span .items {
  gap: 8px;
  margin: 0;
- left: -15px;
+ left: -10px;
  padding: 3px 10px;
  position: relative;
  align-items: center;
@@ -531,6 +531,7 @@ span div .description {
 .experience-header-title .title {
  font-size: 16px;
  font-weight: 600;
+ font-size: var(--big-font-title);
 }
 
 .experience-header-title span div {
@@ -731,6 +732,7 @@ span div .description {
  color: var(--description-text)!important;
  background-color: var(--primary-background);
 }
+
 .banner .information .items .description {
  font-size: var(--small-font-size);
  margin-top: 3px;
@@ -764,9 +766,9 @@ span div .description {
 }
 
 .banner .description {
- text-align: center;
  width: 80%;
  line-height: 15px;
+ text-align: justify;
 }
 
 .banner .description, .container-language .wrapper .description {
@@ -930,13 +932,13 @@ span div .description {
  content: '';
  width: 16px;
  height: 16px;
- left: -5px;
+ left: 0%;
  z-index: 10;
- bottom: 10px;
+ bottom: -15px;
  position: absolute;
  border-radius: 50%;
  border: 5px solid var(--bubble-color);
- background-color: var(--primary-size-icon);
+ background-color: var(--secondary-hightlight);
 }
 
 #skills .infinite-scroll-component__outerdiv .infinite-scroll-component {
@@ -991,7 +993,8 @@ span div .description {
  font-size: var(--big-font-title);
 }
 
-.popup .content {
+.popup .content, 
+#wrapper-content-banner > div .banner .description {
  gap: 15px;
  text-align: center;
  flex-direction: column;

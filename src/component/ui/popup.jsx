@@ -1,12 +1,12 @@
 import react from "react";
 
-const Popup = ({ data, handler, index }) => {
+const Popup = ({ data, handler }) => {
   return (
    <div className="container-popup">
     <div 
      className="popup"
-     data-aos="fade-down"
-     data-aos-duration="300">
+     data-aos="fade-up"
+     data-aos-duration="400">
      <div className="heading-popup">
       <ion-icon 
        name="link"
@@ -28,7 +28,7 @@ const Popup = ({ data, handler, index }) => {
       <p className="description" 
        style={{"--color": "#ccdfeb"}}>You'll be redirected to an external page in a new tab</p>
       <p className="description"
-       style={{"--color": "#989696"}}><i>https://github.com/fridfn</i></p>
+       style={{"--color": "#989696"}}><i>{data}</i></p>
      </div>
      <div className="wrapper">
       <button 

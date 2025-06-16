@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-import Header from "@/component/header"
+import Header from "@/component/widget/header"
 import Navbar from "@/component/widget/navbar"
 import Pagination from "@/component/ui/pagination"
-import Updates from "@/component/widget/section/updates"
-import Contact from "@/component/widget/section/contact"
+import Updates from "@/pages/section/updates"
+import Contact from "@/pages/section/contact"
 import { motion, AnimatePresence } from "framer-motion"
 
  const pagination = [

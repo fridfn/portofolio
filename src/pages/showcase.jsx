@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react"
-import Header from "@/component/header"
 import Popup from "@/component/ui/popup"
+import Header from "@/component/widget/header"
 import Navbar from "@/component/widget/navbar"
 import Pagination from "@/component/ui/pagination"
-import Skils from "@/component/widget/section/skils"
-import Awards from "@/component/widget/section/awards"
-import Portofolio from "@/component/widget/section/portofolio"
+import Skils from "@/pages/section/skils"
+import Awards from "@/pages/section/awards"
+import Portofolio from "@/pages/section/portofolio"
 import { motion, AnimatePresence } from "framer-motion"
 
 const pagination = [

@@ -1,7 +1,7 @@
 import React from "react"
-import Header from "@/component/header"
+import Header from "@/component/widget/header"
 import Navbar from "@/component/widget/navbar"
-import Homes from "@/component/widget/section/home"
+import Homes from "@/pages/section/home"
 
 const Home = () => {
   return (

@@ -6,11 +6,11 @@ import Language from "@/component/ui/language"
 import InfiniteScroll from "react-infinite-scroll-component"
 import CardsProject from "@/component/widget/cardsProject"
 import CardsAwards from "@/component/widget/cardsAwards"
-import { Socials } from "@/component/widget/section/contact"
+import { Socials } from "@/pages/section/contact"
 
 const ComponentList = {
- cards: Cards,
  socials: Socials,
+ cards: Cards,
  progress: Progress,
  language: Language,
  awards: CardsAwards,
