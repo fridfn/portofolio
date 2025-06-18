@@ -45,7 +45,14 @@ const UseListing = ({ data, scroll, type }) => {
     <EachUtils
      of={visibleItems}
      render={(render, index) => (
-      <ComponentRender data={render} key={index} index={index} />
+      <div 
+       key={index}
+       style={{ width: "100%" }}
+       data-aos-delay={index * 1500}
+       data-aos-duration={index * 1000}
+       data-aos={index >= items.slice(0, 4).length && "zoom-in-down"}>
+        <ComponentRender data={render} index={index} />
+      </div>
      )}/>
     {hasMore && (
      <button

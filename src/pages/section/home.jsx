@@ -5,9 +5,13 @@ import TitleDescription from "@/component/ui/titleDescription"
 const Homes = () => {
   const INTEREST_CARDS = metadata.personal.interests
   const DATA_CLIENTS = metadata.personal.reviews;
+  const DESCRIPTION = metadata.personal.about
+  
+  const { title: { highlight, normal }, description } = DESCRIPTION
   
   return (
    <div 
+    id="introduction"
     className="wrapper-section"
     data-aos="zoom-in-down"
     data-aos-duration="400">
@@ -18,22 +22,22 @@ const Homes = () => {
      </p>
     </span>
     <TitleDescription 
+      icons={true} type="description" data={description}
       title={{
-       hightlight: "A little bit",
-       normal: "about me"
+       highlight: highlight,
+       normal: normal
       }}
-      icons={true} type="description" 
     />
     <TitleDescription 
       title={{
-       hightlight: "Clients ", 
-       normal: "testimonials"
+       highlight: "Clients ", 
+       normal: "Reviews"
       }}
       icons={false} type="carousel" 
     />
     <TitleDescription 
       title={{
-       hightlight: "Personal ", 
+       highlight: "Personal ", 
        normal: "interests"
       }}
       count={INTEREST_CARDS}

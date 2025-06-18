@@ -5,13 +5,9 @@ import EachUtils from "@/utils/EachUtils"
 
 const Cards = ({ data, index }) => {
   const { icons, title, description } = data;
-  const setEffect = index > 3;
   return (
    <div 
-    className="cards"
-    data-aos-delay={index * 1500}
-    data-aos-duration={index * 1000}
-    data-aos={setEffect ? "zoom-in-down" : ""}>
+    className="cards">
     <ion-icon className="icon" name={icons}></ion-icon>
     <div className="cards-info">
      <p className="title">{title}</p>

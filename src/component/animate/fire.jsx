@@ -43,7 +43,7 @@ const StyledWrapper = styled.div`
 
     50%,
     90% {
-      transform: scaleY(1.1);
+      transform: scaleY(1.17);
     }
 
     75% {
@@ -51,7 +51,7 @@ const StyledWrapper = styled.div`
     }
 
     80% {
-      transform: scaleX(0.95);
+      transform: scaleX(0.94);
     }
   }
 
@@ -81,8 +81,8 @@ const StyledWrapper = styled.div`
 
     100% {
       opacity: 0;
-      top: -100%;
-      transform: scale(0.5);
+      top: -180%;
+      transform: scale(0.4);
     }
   }
 
@@ -137,8 +137,8 @@ const StyledWrapper = styled.div`
     left: 45%;
     width: 10px;
     height: 10px;
-    background-color: #3cff1e;
     border-radius: 50%;
+    background-color: #3cff1e;
     filter: drop-shadow(0 0 10px #d43322);
     animation: particleUp 2s ease-out 0;
     animation-iteration-count: infinite;
@@ -173,7 +173,7 @@ const StyledWrapper = styled.div`
     width: 15px;
     height: 15px;
     background-color: #3cff1e;
-    transform: scaleX(0.8) rotate(45deg);
+    transform: scaleX(1.5) rotate(45deg);
     border-radius: 50%;
     filter: drop-shadow(0 0 10px #3cff1e);
     animation: particleUp 2s ease-out 0;

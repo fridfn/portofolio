@@ -6,12 +6,6 @@ import Education from "@/pages/section/education"
 import Experience from "@/pages/section/experience"
 import Pagination from "@/component/ui/pagination"
 
-const datas = {
- title: "Education",
- icons: ["construct", "briefcase"]
-}
-
-
 const History = ({ data }) => {
   const pagination = [
    {
@@ -27,8 +21,8 @@ const History = ({ data }) => {
   ]
   
   const ComponentPages = {
-   "education": pagination[0]?.component,
-   "experience": pagination[1]?.component
+   education: Education,
+   experience: Experience
   }
   const ViewedPages = ComponentPages[data];
   
@@ -45,7 +39,7 @@ const History = ({ data }) => {
         exit={{ opacity: 1, x: -100 + "%" }}
         transition={{ duration: 0.5 }}
       >
-        <ViewedPages data={datas} />
+        <ViewedPages data={{ title: "Education", icons: ["construct", "briefcase"] }} />
       </motion.section>
      </AnimatePresence>
    </div>

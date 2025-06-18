@@ -1,5 +1,6 @@
 import React from "react"
 import metadata from "@/metadata"
+import DOMPurify from "dompurify"
 import EachUtils from "@/utils/EachUtils"
 import UseSwiper from  "@/utils/useSwiper"
 import UseListing from "@/utils/useListing"
@@ -14,34 +15,29 @@ const LogoIcons = () => {
   )
 }
 
-const Description = () => {
+const Description = ({ data }) => {
+  const { description } = data;
+  const sanitizedHTML = DOMPurify.sanitize(data)
+  
   return (
    <div className='box-description'>
-    <p className='description'>
-     I’m a Frontend Developer with <b>over a decade</b> of experience, specializing in <strong>Frontend Development</strong> with some backend work as well. I also have hands-on experience with HTML5, CSS3, JavaScript, and NodeJs in production environments.
-     <br></br>
-     <br></br>
-     This diverse background gives me the flexibility to adapt to a wide range of project needs.
-     <br></br>
-     <br></br>
-     I look forward to collaborating <b>WITH YOU!</b>
-    </p>
+    <div className='description' dangerouslySetInnerHTML={{ __html: sanitizedHTML }}/>
    </div>
   )
 }
 
-const TitleDescription = ({ icons, type, title, count }) => {
-  const { hightlight, normal } = title;
-  const DATA_CLIENTS = metadata.personal.reviews;
+const TitleDescription = ({ data, icons, type, title, count }) => {
+  const { highlight, normal } = title;
+  const DATA_REVIEWS = metadata.personal.reviews;
   
   const ArrType = {
    carousel: {
     component: UseSwiper,
-    datas: DATA_CLIENTS
+    datas: DATA_REVIEWS
    },
    description: {
     component: Description,
-    datas: "UNKNOWN"
+    datas: data
    }
   }
   const ResultComponent = ArrType[type]?.component;
@@ -49,9 +45,9 @@ const TitleDescription = ({ icons, type, title, count }) => {
   
   return (
    <div className='sub-content'>
-    <p className='title'><span id='hightlight'>{hightlight}</span>{normal}</p>
+    <p className='title'><span id='hightlight'>{highlight}</span>{normal}</p>
     <div className='content'>
-     {icons ? (<LogoIcons />) : (null)}
+     {icons && (<LogoIcons />)}
      {count ?
       (<UseListing data={count} type="cards"/>) :
       (<ResultComponent data={ResultData} type="cards" />)

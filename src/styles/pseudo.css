@@ -26,6 +26,7 @@
 
 .carousel-box .bubble .description:before, .carousel-box .bubble .description:after {
  z-index: 20;
+ right: 0px;
  content: '"';
  color: #62c0ff;
  font-size: 30px;
@@ -34,7 +35,10 @@
 }
 
 .carousel-box .bubble .description:before {
- margin-left: -22px;
+ left: -25px;
+}
+.carousel-box .bubble .description:after {
+ right: 0px;
 }
 
 .navbar .items.active, .pagination .items.active {
@@ -44,6 +48,10 @@
 
 .items.active .title, .items.active .icon {
  color: #8aff62ff;
+}
+
+.navbar .items.active .icon, .pagination .items.active .icon, .items.active .title, .items.active .icon {
+ transition: .5s ease-in all;
 }
 
 .cards-experience:before, .cards-experience:after, .cards-experience:last-child::before {

@@ -1,5 +1,5 @@
 const Language = ({ data, index }) => {
-  const { image, language, description } = data;
+  const { image, language, description, info } = data;
   
   return (
    <div 
@@ -14,7 +14,7 @@ const Language = ({ data, index }) => {
       onContextMenu={(e) => e.preventDefault()} />
     </div>
     <div className="wrapper">
-     <p className="title">{language}</p>
+     <p className="title">{language} {info}</p>
      <p className="description">{description}</p>
     </div>
    </div>

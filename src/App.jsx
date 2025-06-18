@@ -13,13 +13,15 @@ import Showcase from "@/pages/showcase"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
-  AOS.init({ mirror: false, once: true, duration: "600" });
+  AOS.init({ mirror: false, once: true });
+  
   return (
    <>
      <Router>
       <Routes>
-       <Route path="/" element={<Home />} />
-       <Route path="/home" element={<Home />} />
+       <Route path="/" element={<Home data="introduction" />} />
+       <Route path="/home/introduction" element={<Home data="introduction" />} />
+       <Route path="/home/personality" element={<Home data="personality" />} />
        <Route path="/history/education" element={<History data="education"/>} />
        <Route path="/history/experience" element={<History data="experience" />} />
        <Route path="/showcase/skills" element={<Showcase data="skills" />} />

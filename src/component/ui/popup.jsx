@@ -29,6 +29,8 @@ const Popup = ({ data, handler }) => {
        style={{"--color": "#ccdfeb"}}>You'll be redirected to an external page in a new tab</p>
       <p className="description"
        style={{"--color": "#989696"}}><i>{data}</i></p>
+      <p className="description" 
+       style={{"--color": "#ccdfeb"}}>please confirm if you'd like to continue.</p>
      </div>
      <div className="wrapper">
       <button 

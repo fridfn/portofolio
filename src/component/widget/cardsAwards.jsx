@@ -10,7 +10,7 @@ const CardsAwards = ({ data }) => {
    <div className="cards-awards">
     <div className="experience-header-title">
     <p className="title"><span id="hightlight">{one} </span>{sec}</p>
-     <span>
+     { type || year && (<span>
      { type && (<EachUtils
       of={type}
       render={(value, index) => (
@@ -24,7 +24,7 @@ const CardsAwards = ({ data }) => {
        <ion-icon name={ icons }></ion-icon>
        <p className="description">{ year }</p>
       </div>)}
-     </span>
+     </span>)}
     </div>
     <div className="experience-description">
      <p className="description">{ description }</p>

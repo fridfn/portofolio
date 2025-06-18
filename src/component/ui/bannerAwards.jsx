@@ -6,13 +6,13 @@ const BannerAwards = ({ data, action, index }) => {
   return (
    <div className="banner">
     <div className="box-icon">
-     <ion-icon className="icon" name="layers"></ion-icon>
+     <ion-icon className="icon" name={secon}></ion-icon>
     </div>
     <p className="title"><span id="hightlight">{ one }</span>{ sec }</p>
     <p className="description">{ description }</p>
     <div className="information">
      <div className="items">
-      <ion-icon name={secon}></ion-icon>
+      <ion-icon name="layers"></ion-icon>
       <p className="description">ChatGPT</p>
      </div>
      <ion-icon

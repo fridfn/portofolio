@@ -1,7 +1,8 @@
 import badge from "/badge.png"
-import avatar from "@/assets/profile_pict.jpg"
-import flag_indonesia from "@/assets/flag/indonesia.svg"
+import avatar from "@/assets/logo/profile_pict.jpg"
+import flag_indonesia from "@/assets/flag/indonesian.png"
 import flag_usa from "@/assets/flag/united-states.svg"
+import flag_malay from "@/assets/flag/malaysia.png"
 import nodejs from "@/assets/logo/nodejs.webp"
 import mysql from "@/assets/logo/mysql.webp"
 import php from "@/assets/logo/php8.webp"
@@ -15,7 +16,8 @@ import tailwind from "@/assets/logo/tailwind.webp"
 import nayla from "@/assets/logo/nayla.webp"
 import fridfn from "@/assets/logo/fridfn.jpg"
 import dede from "@/assets/logo/dede.webp"
-import peter from "@/assets/logo/peter.webp"
+import stevan from "@/assets/logo/stevan.png"
+import chatgpt from "@/assets/logo/chatgpt.png"
 import yapin from "@/assets/logo/yapin.jpg"
 import sdn from "@/assets/logo/sdn.jpg"
 import alhuda from "@/assets/logo/alhuda.jpg"
@@ -26,6 +28,20 @@ import server from "@/assets/logo/server.jpeg"
 
 const metadata = {
  personal: {
+  about: {
+   title: {
+    highlight: "A little bit",
+    normal: "about me"
+   },
+   description: "I’m a Frontend Developer with <b>over a decade</b> of experience, specializing in <strong>Frontend Development</strong> with some backend work as well. I also have hands-on experience with HTML5, CSS3, JavaScript, and NodeJs in production environments.<br></br>This diverse background gives me the flexibility to adapt to a wide range of project needs.<br></br>I look forward to collaborating <b>WITH YOU!</b>"
+  },
+  personality: {
+   title: {
+    highlight: "Personal",
+    normal: "MBTI"
+   },
+   description: "I’m a Frontend Developer with <b>over a decade</b> of experience, specializing in <strong>Frontend Development</strong> with some backend work as well. I also have hands-on experience with HTML5, CSS3, JavaScript, and NodeJs in production environments.<br></br>This diverse background gives me the flexibility to adapt to a wide range of project needs.<br></br>I look forward to collaborating <b>WITH YOU!</b>"
+  },
   interests: [
    {
     icons: 'logo-chrome',
@@ -82,9 +98,15 @@ const metadata = {
     comment: "As someone new to web development, working with Farid was a great learning experience. He explained concepts clearly and always encouraged me to keep learning and experimenting."
    },
    {
-    client: "Bryan",
-    avatar: "peter",
+    client: "Stevan",
+    avatar: "stevan",
     from: "Frontend Freelancer",
+    comment: "Farid was a fantastic teammate. He’s proactive, skilled, and always willing to support the team. Collaborating with him made our work more efficient and enjoyable."
+   },
+   {
+    client: "ChatGPT",
+    avatar: "chatgpt",
+    from: "Artificial Intelligence",
     comment: "Farid was a fantastic teammate. He’s proactive, skilled, and always willing to support the team. Collaborating with him made our work more efficient and enjoyable."
    },
   ],
@@ -93,19 +115,19 @@ const metadata = {
     language: "Indonesia",
     image: flag_indonesia,
     info: "-- Native",
-    description: "et enim eiusmod occaecat minim aute mollit commodo sunt laboris et irure nisi id",
+    description: "excellent communication and writing skills.",
    },
    {
     language: "English",
     image: flag_usa,
     info: "-- Intermediate",
-    description: "et enim eiusmod occaecat minim aute mollit commodo sunt laboris et irure nisi id",
+    description: "Intermediate proficiency in English language; can hold conversations and understand written text.",
    },
    {
     language: "Malaysia",
-    image: flag_usa,
+    image: flag_malay,
     info: "-- Intermediate",
-    description: "et enim eiusmod occaecat minim aute mollit commodo sunt laboris et irure nisi id",
+    description: "excellent communication and writing skills.",
    },
   ],
   portofolio: [
@@ -174,7 +196,7 @@ const metadata = {
     },
     icons: {
      main: "logo-octocat",
-     secon: "logo-firefox",
+     secon: "logo-tableau",
     },
     link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
     description: "For the spirit of learning without a formal teacher. You explore the world of coding with only determination and curiosity."
@@ -187,7 +209,7 @@ const metadata = {
     },
     icons: {
      main: "logo-octocat",
-     secon: "logo-firefox",
+     secon: "logo-tableau",
     },
     link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
     description: "Because you can turn ideas into real projects. Even using unusual environments, such as proot and UserLand OS."
@@ -200,7 +222,7 @@ const metadata = {
     },
     icons: {
      main: "logo-octocat",
-     secon: "logo-firefox",
+     secon: "logo-tableau",
     },
     link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
     description: "From tinkering with servers to finding solutions to strange problems in Termux—you never give up and always find a way out."
@@ -213,7 +235,7 @@ const metadata = {
     },
     icons: {
      main: "logo-octocat",
-     secon: "logo-firefox",
+     secon: "logo-tableau",
     },
     link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
     description: "Because you learn and use React, Particles.js, and router seriously. Not all beginners dare to dive that far."
@@ -226,7 +248,7 @@ const metadata = {
     },
     icons: {
      main: "logo-octocat",
-     secon: "logo-firefox",
+     secon: "logo-tableau",
     },
     link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
     description: "For your courage to explore many tools and concepts (Supabase, Podman, Docker, Wings) just to understand how it all works."
@@ -239,7 +261,7 @@ const metadata = {
     },
     icons: {
      main: "logo-octocat",
-     secon: "logo-firefox",
+     secon: "logo-tableau",
     },
     link: "https://chatgpt.com/share/684cdbd9-fdc0-8012-b941-70df14c5aaa2",
     description: "For your courage, consistency and determination to face challenges, even in limited technical environments."
@@ -307,18 +329,16 @@ const metadata = {
      one: "10,000+ Lines of Code Written",
      sec: ""
     },
-    icons: "mail",
-    image: "mysql",
+    icons: "ribbon",
     type: ["Code", "WritingLogic"],
-    description: "From basic HTML to React and PHP, I've written thousands of lines of code in personal projects, UI experiments, and paid assignments.."
+    description: "From basic HTML to React and PHP, I've written thousands of lines of code in personal projects, UI experiments, and paid assignments."
    },
    {
     title: {
      one: "6+ Personal Projects Completed",
      sec: ""
     },
-    icons: "mail",
-    image: "mysql",
+    icons: "construct",
     type: ["PersonalProject", "Finished"],
     description: "Build a variety of projects from scratch—including a dinosaur encyclopedia, a portfolio website, and a Figma-designed UI to real code."
    },
@@ -327,8 +347,7 @@ const metadata = {
      one: "3 Front-End Technologies Learned",
      sec: ""
     },
-    icons: "mail",
-    image: "mysql",
+    icons: "image",
     type: ["Frontend", "Learning"],
     description: "From pure CSS, JavaScript frameworks (React), to animations like Particles.js—I learned everything and put it into practice right away."
    },
@@ -338,7 +357,6 @@ const metadata = {
      sec: ""
     },
     icons: "mail",
-    image: "mysql",
     type: ["Termux", "Linux"],
     description: "Running Ubuntu and Debian on Termux to build server-side panels and learn to manage development environments with device limitations."
    },
@@ -347,8 +365,7 @@ const metadata = {
      one: "Running Hosting Panel on Android",
      sec: ""
     },
-    icons: "mail",
-    image: "mysql",
+    icons: "layers",
     type: ["Server", "Panel"],
     description: "Trying out Pterodactyl Panel on Termux and Wings on Gitpod—technical experiments that pushed me to understand infrastructure & Docker."
    },
@@ -357,7 +374,7 @@ const metadata = {
      one: "500+ Hours of Self-Study",
      sec: ""
     },
-    icons: "mail",
+    icons: "ribbon",
     image: "mysql",
     type: ["Autodidact", "Consistency"],
     description: "Without formal guidance outside of school, I compiled notes, built from mistakes, and developed a consistent pattern of self-study."
@@ -367,8 +384,7 @@ const metadata = {
      one: "Always Learn from Errors",
      sec: ""
     },
-    icons: "mail",
-    image: "mysql",
+    icons: "medical",
     type: ["Debugging", "ProblemSolver"],
     description: "Every error is a teacher. I got used to reading stack traces, finding solutions, and understanding the root cause—not just copying the answers."
    },
@@ -861,9 +877,11 @@ const metadata = {
  images: {
   avatar: avatar,
   usa: flag_usa,
+  malay: flag_malay,
   indonesia: flag_indonesia,
   ayuu: badge,
   farid: badge,
+  chatgpt: chatgpt,
   nabilla: badge,
   nodejs: nodejs,
   mysql: mysql,
@@ -873,7 +891,7 @@ const metadata = {
   nayla: nayla,
   fridfn: fridfn,
   dede: dede,
-  peter: peter,
+  stevan: stevan,
   sdn: sdn,
   yapin: yapin,
   alhuda: alhuda,

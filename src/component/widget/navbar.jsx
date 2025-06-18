@@ -4,7 +4,7 @@ import EachUtils from "@/utils/EachUtils"
 
 const Navbar = ({ pages }) => {
   const ListNavbar = [
-   {title: "home", icons: "home", path: "/home"},
+   {title: "home", icons: "home", path: "/home/introduction"},
    {title: "history", icons: "time", path: "/history/education"},
    {title: "showcase", icons: "image", path: "/showcase/skills"},
    {title: "other", icons: "medical", path: "/other/updates"}

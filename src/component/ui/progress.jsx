@@ -6,10 +6,7 @@ const Progress = ({ data, index }) => {
   
   return (
    <div 
-    className="progress-container" 
-    data-aos-delay={index * 1500}
-    data-aos-duration={index * 1000}
-    data-aos={index > 3 ? "zoom-in-down" : ""}>
+    className="progress-container" >
     <div className="progress-box">
      <div className="box-icon">
       <img className="icon" src={image} />
