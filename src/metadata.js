@@ -25,6 +25,15 @@ import learning from "@/assets/logo/learning.jpeg"
 import os from "@/assets/logo/os.jpeg"
 import project from "@/assets/logo/project.jpeg"
 import server from "@/assets/logo/server.jpeg"
+import mbti_assertive from "@/assets/mbti/16personalities_trait_assertive.svg"
+import mbti_feeling from "@/assets/mbti/16personalities_trait_feeling.svg"
+import mbti_introverted from "@/assets/mbti/16personalities_trait_introverted.svg"
+import mbti_intuitive from "@/assets/mbti/16personalities_trait_intuitive.svg"
+import mbti_judging from "@/assets/mbti/16personalities_trait_judging.svg"
+import mbti_infj from "@/assets/mbti/infj-advocate-male.svg"
+import mbti_diplomat from "@/assets/mbti/role-diplomat.svg"
+import mbti_strategy from "@/assets/mbti/strategy-confident-individualism-diplomat.svg"
+import mbti from "@/assets/mbti/strategy-confident-individualism-diplomat.svg"
 
 const metadata = {
  personal: {
@@ -34,6 +43,34 @@ const metadata = {
     normal: "about me"
    },
    description: "I’m a Frontend Developer with <b>over a decade</b> of experience, specializing in <strong>Frontend Development</strong> with some backend work as well. I also have hands-on experience with HTML5, CSS3, JavaScript, and NodeJs in production environments.<br></br>This diverse background gives me the flexibility to adapt to a wide range of project needs.<br></br>I look forward to collaborating <b>WITH YOU!</b>"
+  },
+  mbti: {
+   about: [
+    {
+     title: {
+      sub: "personality",
+      main: "Advocate (INFJ - A)"
+     },
+     image: "mbti_infj",
+     description: "Advocates are quiet visionaries, often serving as inspiring and tireless idealists. These rare types are open-minded and imaginative, applying care and creativity."
+    },
+    {
+     title: {
+      sub: "About Role",
+      main: "Diplomats"
+     },
+     image: "mbti_diplomat",
+     description: "Advocates are quiet visionaries, often serving as inspiring and tireless idealists. These rare types are open-minded and imaginative, applying care and creativity."
+    },
+    {
+     title: {
+      sub: "Strategy",
+      main: "Confident Individualism"
+     },
+     image: "mbti_strategy",
+     description: "Advocates are quiet visionaries, often serving as inspiring and tireless idealists. These rare types are open-minded and imaginative, applying care and creativity."
+    },
+   ],
   },
   personality: {
    title: {
@@ -132,58 +169,80 @@ const metadata = {
   ],
   portofolio: [
    {
-    name: "Reminder App's",
-    image: "mysql",
-    type: "Web Apps",
+    name: "First Website",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMxNYgocFdlvBifw1M27yKmTAl314mDNpAjQ&usqp=CAU",
+    type: "First Development",
     year: "Oct 2022",
     icons: ["logo-github", "mail", "link"],
     photo: [avatar, avatar, avatar, avatar],
-    link: ["https://github.com/fridfn", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://exfavorite-website-development.vercel.app/"],
+    link: ["https://github.com/fridfn/exfavorite-website-development", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://exfavorite-website-development.vercel.app/"],
     stack: ["javascript", "Sass", "React"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
    {
-    name: "Fandom V-Tuber",
-    image: "mysql",
+    name: "Reminder App's",
+    image: "https://raw.githubusercontent.com/fridfn/reminder-apps/refs/heads/main/public/apple-touch-icon.png",
     type: "Web Apps",
     year: "Oct 2022",
     icons: ["logo-github", "mail", "link"],
     photo: [avatar, avatar, avatar, avatar],
-    link: ["https://github.com/fridfn", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://exfandom.vercel.app/"],
+    link: ["https://github.com/fridfn/reminder-apps", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://exfavorite-website-development.vercel.app/"],
+    stack: ["javascript", "Sass", "React"],
+    description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
+   },
+   {
+    name: "Clothing's Shop",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9gJa9hCkklQZcXGT70904-sW-CdRf9VwsAOcwfJbDpx5AkCIiBQECh-HA&s=10",
+    type: "E-Commerce",
+    year: "Oct 2022",
+    icons: ["logo-github", "mail", "link"],
+    photo: [avatar, avatar, avatar, avatar],
+    link: ["https://github.com/fridfn/reminder-apps", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://exfavorite-website-development.vercel.app/"],
+    stack: ["PHP", "CSS","JAVASCRIPT", "MySQL"],
+    description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
+   },
+   {
+    name: "Fandom V-Tuber",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROk-YZJ75_8endELNdT1toEm4_5_EeB0lLaIi7UeIbifxx-yUuQz7rlKo&s=10",
+    type: "Web Apps",
+    year: "Oct 2022",
+    icons: ["logo-github", "mail", "link"],
+    photo: [avatar, avatar, avatar, avatar],
+    link: ["https://github.com/fridfn/Ex-Fandom", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://exfandom.vercel.app/"],
     stack: ["javascript", "Css", "HTML5"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
    {
     name: "Youtube Website",
-    image: "mysql",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNBHz7bbmm8AXaev7gYox4Gd5v4qZbnwQAbqwRNz7Wyg&s",
     type: "E-Comerce",
     year: "Oct 2022",
     icons: ["logo-github", "mail", "link"],
     photo: [avatar, avatar, avatar, avatar],
-    link: ["https://github.com/fridfn", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://exyoutube.vercel.app/"],
-    stack: ["PHP", "Css", "HTML5", "MySQL"],
-    description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
-   },
-   {
-    name: "Fabot App's",
-    image: "mysql",
-    type: "Design",
-    year: "Oct 2022",
-    icons: ["logo-github", "mail", "link"],
-    photo: [avatar, avatar, avatar, avatar],
-    link: ["https://github.com/fridfn", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://fabot-apps.vercel.app/"],
+    link: ["https://github.com/fridfn/exyoutube", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://exyoutube.vercel.app/"],
     stack: ["Css", "HTML5"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
    {
+    name: "Fabot App's",
+    image: "https://raw.githubusercontent.com/fridfn/FabotApps/refs/heads/main/assets/icon/boticon.webp",
+    type: "Design",
+    year: "Oct 2022",
+    icons: ["logo-github", "mail", "link"],
+    photo: [avatar, avatar, avatar, avatar],
+    link: ["https://github.com/fridfn/FabotApps", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://fabot-apps.vercel.app/"],
+    stack: ["Css", "HTML5", "javascript", "API"],
+    description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
+   },
+   {
     name: "Birthday Gift",
-    image: "mysql",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjYuQFWnwldB8VOU9Cg8kNpj5KdA1Rt-cJKroT-9RQMIOMUKN7oaTOol9q&s=10",
     year: "Oct 2022",
     type: "Information",
     icons: ["logo-github", "mail", "link"],
     photo: [avatar, avatar, avatar, avatar],
-    link: ["https://github.com/fridfn", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://asyla.vercel.app/"],
-    stack: ["React", "Sass", "Css", "HTML5"],
+    link: ["https://github.com/fridfn/project-birthday-wishes", "mailto:faridfathonin@gmail.com?subject=Hi%20Farid!&body=Halo%20farid%20%3E%5C%5C%3C", "https://asyla.vercel.app/"],
+    stack: ["Css", "HTML5"],
     description: "velit cillum dolor irure qui ullamco ex cupidatat culpa incididunt dolore mollit voluptate qui sit pariatur culpa sit nulla duis"
    },
   ],
@@ -900,6 +959,15 @@ const metadata = {
   react: react,
   server: server,
   project: project,
+  mbti: mbti,
+  mbti_infj: mbti_infj,
+  mbti_diplomat: mbti_diplomat,
+  mbti_strategy: mbti_strategy,
+  mbti_assertive: mbti_assertive,
+  mbti_judging: mbti_judging,
+  mbti_intuitive: mbti_intuitive,
+  mbti_introverted: mbti_introverted,
+  mbti_feeling: mbti_feeling,
  }
 }
 

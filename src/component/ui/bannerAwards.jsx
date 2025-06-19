@@ -1,6 +1,6 @@
 import React from "react"
 
-const BannerAwards = ({ data, action, index }) => {
+const BannerAwards = ({ data, handler, index }) => {
   const { title: { one, sec }, description, link, icons: { main, secon } } = data;
   
   return (
@@ -16,15 +16,8 @@ const BannerAwards = ({ data, action, index }) => {
       <p className="description">ChatGPT</p>
      </div>
      <ion-icon
-      className="forwards"
-      name={main}
-      onClick={() => {
-       action({
-         action: "redirect",
-         data: link,
-         index: index
-       }) 
-      }}>
+      className="forwards"name={main}
+      onClick={() => handler() }>
      </ion-icon>
     </div>
    </div>

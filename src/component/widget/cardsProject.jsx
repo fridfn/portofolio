@@ -3,7 +3,7 @@ import Avatar from "@/component/ui/avatar"
 import EachUtils from "@/utils/EachUtils"
 import BubbleSelected from "@/component/ui/bubbleSelected"
 
-const CardsProject = ({ data }) => {
+const CardsProject = ({ data, handler }) => {
   const { name, icons, image, type, stack, link, description } = data;
   
   return (
@@ -36,10 +36,10 @@ const CardsProject = ({ data }) => {
        of={icons}
        render={(value, index) => (
         <ion-icon 
-          key={index}
-          name={value}
-          className="icon"
-          onClick={() => window.location.href = link?.[index]}>
+           key={index}
+           name={value}
+           className="icon"
+           onClick={ () => handler(data?.link, index) }>
         </ion-icon>
        )}/>
      </span>

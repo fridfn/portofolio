@@ -7,15 +7,17 @@ import Banner from  "@/component/ui/banner"
 import { Pagination, Navigation, Autoplay } from 'swiper/modules'
 import bannerAwards from "@/component/ui/bannerAwards"
 import CardsIcons from "@/component/widget/cardsIcons"
+import { CarouselImage } from "@/component/widget/carousel"
 
 const ComponentList = {
- cards: CarouselCards,
  banner: Banner,
+ updates: CardsIcons,
+ cards: CarouselCards,
  certificate: bannerAwards,
- updates: CardsIcons
+ carouselImage: CarouselImage
 }
 
-const UseSwiper = ({ data, type, view, action }) => {
+const UseSwiper = ({ data, type, view, handler }) => {
   const ComponentSwiper = ComponentList?.[type]
   return (
    <div>
@@ -28,7 +30,7 @@ const UseSwiper = ({ data, type, view, action }) => {
       modules={[ Pagination, Navigation, Autoplay ]}>
       {data.map((value, index) => (
        <SwiperSlide key={index}>
-        <ComponentSwiper data={value} key={index} action={action} index={index} />
+        <ComponentSwiper data={value} key={index} handler={handler} index={index} />
        </SwiperSlide>
       ))}
     </Swiper>

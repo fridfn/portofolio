@@ -17,7 +17,7 @@ const Awards = ({ data, handler }) => {
      </span>
      <div className="wrapper-content">
       <p className="title">Awards</p>
-      <UseSwiper data={DATA_AWARDS} type="certificate" view="1" action={handler} />
+      <UseSwiper data={DATA_AWARDS} type="certificate" view="1" handler={handler} />
      </div>
      <div className="wrapper-content"
       id="awards">

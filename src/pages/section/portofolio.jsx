@@ -1,13 +1,13 @@
 import React from "react"
-import UseListing from "@/utils/useListing"
 import metadata from "@/metadata"
+import UseListing from "@/utils/useListing"
 
-const Portofolio = ({ data }) => {
+const Portofolio = ({ data, handler }) => {
   const PROJECT_LIST = metadata.personal.portofolio;
   
   return (
    <>
-    <div 
+    <div
      className="wrapper-section"
      data-aos="zoom-in-down"
      data-aos-duration="400">
@@ -16,7 +16,7 @@ const Portofolio = ({ data }) => {
      </span>
      <div className="wrapper-content">
       <p className="title">Project</p>
-      <UseListing data={PROJECT_LIST} type="project" />
+      <UseListing data={PROJECT_LIST} type="project" handler={handler} />
      </div>
     </div>
    </>

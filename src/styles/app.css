@@ -46,7 +46,7 @@ span div .description {
 }
 
 .sub-content .content, .cards .cards-info, .progress-box, .wrapper-content,
-.cards-project, .cards-project .media-social, .media-social span, .cards-awards, .cards-awards .media-social, .cards-awards .media-social span  {
+.cards-project, .cards-project .media-social, .media-social span, .cards-awards, .cards-awards .media-social, .cards-awards .media-social span {
  gap: 6px;
  display: flex;
  position: relative;
@@ -59,6 +59,10 @@ span div .description {
  align-items: center;
  flex-direction: column;
  justify-content: center;
+}
+
+.sub-content .content .infinite-scroll-component__outerdiv .infinite-scroll-component {
+ gap: 20px;
 }
 
 .header {
@@ -493,9 +497,10 @@ span div .description {
 
 .cards-project .experience-header-title .box {
  left: 80%;
- top: -5px;
+ top: -10px;
  position: absolute;
  transform: scale(1.4);
+ background-color: grey;
 }
 
 .cards-experience .experience-header-title .box  {
@@ -689,6 +694,10 @@ span div .description {
  padding-top: 15px;
  gap: 35px;
  overflow: hidden;
+}
+
+.showcase-pages section .wrapper-section .wrapper-content .infinite-scroll-component {
+ padding-top: 20px;
 }
 
 .wrapper-content > .title {
@@ -955,15 +964,14 @@ span div .description {
  inset: 0;
  z-index: 100;
  height: 100dvh;
- position: fixed;
  align-items: start;
- backdrop-filter: blur(5px);
 }
 
 .popup {
  gap: 35px;
  padding: 25px;
  margin: 10px;
+ z-index: 100;
  margin-top: 15%;
  border-radius: 15px;
  border: 2px solid #353535;
@@ -1010,17 +1018,59 @@ span div .description {
 
 .popup .content .description {
  color: var(--color)!important;
+ word-break: break-all;
+ width: 100%;
+}
+
+.home-pages .swiper .swiper-wrapper {
+ border-radius: 15px 15px 0 0;
 }
 
 .carousel-image {
  gap: 20px;
+ position: relative;
  flex-direction: column;
 }
 
-.carousel-image .header {
- padding: 0;
+.carousel-image:before {
+ top: 0;
+ width: 200%;
+ content: "";
+ height: 4px;
+ z-index: 4;
+ position: absolute;
+ border-top: 4px solid var(--hightlight-text);
+}
+
+.carousel-image .box-image .box {
+ border: 0px solid transparent;
 }
 
 .carousel-image .header {
- 
+ gap: 5px;
+ padding: 0;
+ z-index: 15;
+ margin-top: 20px;
+ background-color: transparent;
+}
+
+.carousel-image .header .description {
+ font-weight: 500;
+ text-transform: capitalize;
+ font-size: var(--description-font-size);
+}
+
+.carousel-image .header .title {
+ font-weight: 600;
+ font-family: "Helvetica";
+ color: var(--hightlight-text)!important;
+ font-size: var(--primary-size-icon);
+}
+
+.waves-bg {
+ top: -25px;
+ z-index: -1;
+ height: 140px;
+ padding-top: 30px;
+ position: absolute;
 }

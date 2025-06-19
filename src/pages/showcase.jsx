@@ -6,6 +6,7 @@ import Pagination from "@/component/ui/pagination"
 import Skils from "@/pages/section/skils"
 import Awards from "@/pages/section/awards"
 import Portofolio from "@/pages/section/portofolio"
+import usePopup from "@/utils/usePopup"
 import { motion, AnimatePresence } from "framer-motion"
 
 const pagination = [
@@ -27,16 +28,7 @@ const pagination = [
 ]
 
 const Showcase = ({ data }) => {
-  const [popupData, setPopupData] = useState(null);
-  
-  const handlePopup = ({ data, index }) => {
-    if (popupData) {
-      setPopupData(null);
-    } else {
-      setPopupData({ data, index });
-    }
-  };
-  
+  const { isOpen, openPopup, closePopup, popupData } = usePopup();
   
   const ComponentPages = {
     skills: Skils,
@@ -45,16 +37,26 @@ const Showcase = ({ data }) => {
   };
   
   const ViewedPages = ComponentPages[data];
-  
   return (
-    <>
-      {popupData && (
-        <Popup
-          data={popupData.data}
-          index={popupData.index}
-          handler={handlePopup}
-        />
-      )}
+    <> 
+      <AnimatePresence mode="wait">
+        <motion.section
+          key={ isOpen }
+          style={{ zIndex: "100", position: 'fixed',
+          ...(isOpen && {backdropFilter: "blur(5px)"})
+          }}
+          transition={{ duration: 0.4 }}
+          initial={{ opacity: 0, y: "0" }}
+          animate={{ opacity: 1, y: "0" }}
+          exit={{ opacity: .6, x: "-100%" }}
+        >
+          <Popup
+            data={popupData}
+            isOpen={isOpen}
+            onClose={closePopup}
+          />
+        </motion.section>
+      </AnimatePresence>
       <div className="showcase-pages">
         <Header />
         <Pagination data={pagination} />
@@ -67,13 +69,7 @@ const Showcase = ({ data }) => {
             exit={{ opacity: 1, x: "-100%" }}
             transition={{ duration: 0.5 }}
           >
-            <ViewedPages
-              handler={handlePopup}
-              data={{
-                title: "Skills",
-                icons: ["school", "briefcase"]
-              }}
-            />
+            <ViewedPages handler={openPopup} />
           </motion.section>
         </AnimatePresence>
       </div>

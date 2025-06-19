@@ -21,28 +21,25 @@ const Homes = () => {
       <span>&#9866;</span>ID<span>•</span><ion-icon name="mail" style={{color: "var(--secondary-hightlight)"}}></ion-icon><a style={{color: "var(--secondary-hightlight)!important"}} href="mailto:faridfathonin@gmail.com">faridfathonin@gmail.com</a>
      </p>
     </span>
-    <TitleDescription 
-      icons={true} type="description" data={description}
-      title={{
-       highlight: highlight,
-       normal: normal
-      }}
-    />
-    <TitleDescription 
-      title={{
-       highlight: "Clients ", 
-       normal: "Reviews"
-      }}
-      icons={false} type="carousel" 
-    />
-    <TitleDescription 
-      title={{
-       highlight: "Personal ", 
-       normal: "interests"
-      }}
-      count={INTEREST_CARDS}
-      icons={false} type="cards" 
-    />
+     <div className="wrapper-content">
+      <p className="title"><span id="hightlight">A litle bit</span>about me</p>
+       <TitleDescription 
+         icons="rocket" type="description" data={description}
+       />
+    </div>
+    <div className="wrapper-content">
+     <p className="title"><span id="hightlight">Clients</span>Reviews</p>
+     <TitleDescription 
+       icons={false} type="carousel" 
+     />
+    </div>
+    <div className="wrapper-content">
+     <p className="title"><span id="hightlight">Personal</span>interests</p>
+     <TitleDescription 
+       count={INTEREST_CARDS}
+       icons={false} type="cards" 
+     />
+    </div>
    </div>
   )
 }

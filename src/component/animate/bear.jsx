@@ -4,49 +4,59 @@ import styled from 'styled-components';
 const Loader = () => {
   return (
     <StyledWrapper>
-      <div className="main">
-        <div className="dog">
-          <div className="dog__paws">
-            <div className="dog__bl-leg leg">
-              <div className="dog__bl-paw paw" />
-              <div className="dog__bl-top top" />
-            </div>
-            <div className="dog__fl-leg leg">
-              <div className="dog__fl-paw paw" />
-              <div className="dog__fl-top top" />
-            </div>
-            <div className="dog__fr-leg leg">
-              <div className="dog__fr-paw paw" />
-              <div className="dog__fr-top top" />
-            </div>
-          </div>
-          <div className="dog__body">
-            <div className="dog__tail" />
-          </div>
-          <div className="dog__head">
-            <div className="dog__snout">
-              <div className="dog__eyes">
-                <div className="dog__eye-l" />
-                <div className="dog__eye-r" />
-              </div>
-            </div>
-          </div>
-          <div className="dog__head-c">
-            <div className="dog__ear-r" />
-            <div className="dog__ear-l" />
-          </div>
-        </div>
+      <div className="container">
+       <div className="main">
+         <div className="bear">
+           <div className="bear__paws">
+             <div className="bear__bl-leg leg">
+               <div className="bear__bl-paw paw" />
+               <div className="bear__bl-top top" />
+             </div>
+             <div className="bear__fl-leg leg">
+               <div className="bear__fl-paw paw" />
+               <div className="bear__fl-top top" />
+             </div>
+             <div className="bear__fr-leg leg">
+               <div className="bear__fr-paw paw" />
+               <div className="bear__fr-top top" />
+             </div>
+           </div>
+           <div className="bear__body">
+             <div className="bear__tail" />
+           </div>
+           <div className="bear__head">
+             <div className="bear__snout">
+               <div className="bear__eyes">
+                 <div className="bear__eye-l" />
+                 <div className="bear__eye-r" />
+               </div>
+             </div>
+           </div>
+           <div className="bear__head-c">
+             <div className="bear__ear-r" />
+             <div className="bear__ear-l" />
+           </div>
+         </div>
+       </div>
       </div>
     </StyledWrapper>
   );
 }
 
 const StyledWrapper = styled.div`
+  .container {
+   height: 10vmax;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  
   .main {
     position: relative;
     width: 23.5vmax;
     height: 23.5vmax;
     display: flex;
+    left: -30px;
     justify-content: center;
     align-items: center;
   }
@@ -89,13 +99,13 @@ const StyledWrapper = styled.div`
     background-image: linear-gradient(70deg, transparent 20%, #deac80 20%);
   }
 
-  .dog {
+  .bear {
     position: relative;
     width: 20vmax;
     height: 8vmax;
   }
 
-  .dog::before {
+  .bear::before {
     content: "";
     position: absolute;
     bottom: -0.75vmax;
@@ -108,7 +118,7 @@ const StyledWrapper = styled.div`
     animation: shadow 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
   }
 
-  .dog__head {
+  .bear__head {
     position: absolute;
     left: 4.5vmax;
     bottom: 0;
@@ -122,7 +132,7 @@ const StyledWrapper = styled.div`
     animation: head 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
   }
 
-  .dog__head-c {
+  .bear__head-c {
     position: absolute;
     left: 1.5vmax;
     bottom: 0;
@@ -132,7 +142,7 @@ const StyledWrapper = styled.div`
     z-index: -1;
   }
 
-  .dog__snout {
+  .bear__snout {
     position: absolute;
     left: -1.5vmax;
     bottom: 0;
@@ -145,7 +155,7 @@ const StyledWrapper = styled.div`
     animation: snout 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
   }
 
-  .dog__snout::before {
+  .bear__snout::before {
     content: "";
     position: absolute;
     left: -0.1125vmax;
@@ -159,7 +169,7 @@ const StyledWrapper = styled.div`
     animation: snout-b 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
   }
 
-  .dog__nose {
+  .bear__nose {
     position: absolute;
     top: -1.95vmax;
     left: 40%;
@@ -171,8 +181,8 @@ const StyledWrapper = styled.div`
     background-color: #d7dbd2;
   }
 
-  .dog__eye-l,
-  .dog__eye-r {
+  .bear__eye-l,
+  .bear__eye-r {
     position: absolute;
     top: -0.9vmax;
     width: 0.675vmax;
@@ -182,16 +192,16 @@ const StyledWrapper = styled.div`
     animation: eye 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
   }
 
-  .dog__eye-l {
+  .bear__eye-l {
     left: 27%;
   }
 
-  .dog__eye-r {
+  .bear__eye-r {
     left: 65%;
   }
 
-  .dog__ear-l,
-  .dog__ear-r {
+  .bear__ear-l,
+  .bear__ear-r {
     position: absolute;
     width: 5vmax;
     height: 3.3vmax;
@@ -202,7 +212,7 @@ const StyledWrapper = styled.div`
     background-color: #deac80;
   }
 
-  .dog__ear-l {
+  .bear__ear-l {
     top: 1.5vmax;
     left: 10vmax;
     transform-origin: bottom left;
@@ -211,7 +221,7 @@ const StyledWrapper = styled.div`
     animation: ear-l 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
   }
 
-  .dog__ear-r {
+  .bear__ear-r {
     top: 1.5vmax;
     right: 3vmax;
     transform-origin: bottom right;
@@ -220,7 +230,7 @@ const StyledWrapper = styled.div`
     animation: ear-r 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
   }
 
-  .dog__body {
+  .bear__body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -238,7 +248,7 @@ const StyledWrapper = styled.div`
     animation: body 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
   }
 
-  .dog__tail {
+  .bear__tail {
     position: absolute;
     top: 20px;
     right: -1.5vmax;
@@ -248,7 +258,7 @@ const StyledWrapper = styled.div`
     border-radius: 1.5vmax;
   }
 
-  .dog__paws {
+  .bear__paws {
     position: absolute;
     bottom: 0;
     left: 7.5vmax;
@@ -256,33 +266,33 @@ const StyledWrapper = styled.div`
     height: 3vmax;
   }
 
-  .dog__bl-leg {
+  .bear__bl-leg {
     left: -3vmax;
     z-index: -10;
   }
 
-  .dog__bl-paw::before {
+  .bear__bl-paw::before {
     background-color: #fffbe6;
   }
 
-  .dog__bl-top {
+  .bear__bl-top {
     background-image: linear-gradient(80deg, transparent 20%, #deac80 20%);
   }
 
-  .dog__fl-leg {
+  .bear__fl-leg {
     z-index: 10;
     left: 0;
   }
 
-  .dog__fl-paw::before {
+  .bear__fl-paw::before {
     background-color: #fffbe6;
   }
 
-  .dog__fr-leg {
+  .bear__fr-leg {
     right: 0;
   }
 
-  .dog__fr-paw::before {
+  .bear__fr-paw::before {
     background-color: #fffbe6;
   }
 

@@ -17,7 +17,7 @@ const ComponentList = {
  project: CardsProject,
 }
 
-const UseListing = ({ data, scroll, type }) => {
+const UseListing = ({ data, scroll, type, handler }) => {
   const ComponentRender = ComponentList?.[type]
   const items = data;
   const [visibleItems, setVisibleItems] = useState(items.slice(0, 4))
@@ -51,7 +51,7 @@ const UseListing = ({ data, scroll, type }) => {
        data-aos-delay={index * 1500}
        data-aos-duration={index * 1000}
        data-aos={index >= items.slice(0, 4).length && "zoom-in-down"}>
-        <ComponentRender data={render} index={index} />
+        <ComponentRender data={render} index={index} handler={handler} />
       </div>
      )}/>
     {hasMore && (

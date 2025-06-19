@@ -4,13 +4,21 @@ import DOMPurify from "dompurify"
 import EachUtils from "@/utils/EachUtils"
 import UseSwiper from  "@/utils/useSwiper"
 import UseListing from "@/utils/useListing"
+import Candles from "@/component/animate/candle"
 import Rocket from "@/component/animate/rocket"
 import CarouselCards from  "@/component/widget/carousel"
 
-const LogoIcons = () => {
+const LogoIcons = ({ type }) => {
+  const components = {
+   rocket: Rocket,
+   candles: Candles
+  }
+  
+  const Component = components[type]
+  
   return (
    <div className="box-logo">
-    <Rocket />
+    {Component && <Component />}
    </div>
   )
 }
@@ -21,13 +29,12 @@ const Description = ({ data }) => {
   
   return (
    <div className='box-description'>
-    <div className='description' dangerouslySetInnerHTML={{ __html: sanitizedHTML }}/>
+    <div className='description' dangerouslySetInnerHTML={{ __html: sanitizedHTML }} />
    </div>
   )
 }
 
-const TitleDescription = ({ data, icons, type, title, count }) => {
-  const { highlight, normal } = title;
+const TitleDescription = ({ data, icons, type, count }) => {
   const DATA_REVIEWS = metadata.personal.reviews;
   
   const ArrType = {
@@ -45,9 +52,8 @@ const TitleDescription = ({ data, icons, type, title, count }) => {
   
   return (
    <div className='sub-content'>
-    <p className='title'><span id='hightlight'>{highlight}</span>{normal}</p>
     <div className='content'>
-     {icons && (<LogoIcons />)}
+     {icons && (<LogoIcons type={icons} />)}
      {count ?
       (<UseListing data={count} type="cards"/>) :
       (<ResultComponent data={ResultData} type="cards" />)

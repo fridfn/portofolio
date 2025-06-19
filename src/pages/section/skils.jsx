@@ -18,7 +18,7 @@ const Skils = ({ data }) => {
      data-aos="zoom-in-down"
      data-aos-duration="300">
     <span className="greeting">
-     <p className='title' id='hightlight'>{data.title}</p>
+     <p className='title' id='hightlight'>Skills</p>
     </span>
     <div className="content-progress">
      <div className="wrapper-content" id="wrapper-content-banner">

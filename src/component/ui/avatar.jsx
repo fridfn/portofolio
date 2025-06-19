@@ -7,8 +7,8 @@ const Avatar = ({ name }) => {
   return (
    <div className='box'>
     <img 
-     src={getImage}
      alt='avatar' className='image'
+     src={name.length > 15 ? name : getImage}
      onContextMenu={(e) => e.preventDefault()}
     />
    </div>
