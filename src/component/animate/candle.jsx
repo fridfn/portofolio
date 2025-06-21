@@ -41,7 +41,7 @@ const Candles = () => {
 
 const StyledWrapper = styled.div`
   .container {
-   height: 100px;
+   height: 80px;
    position: relative;
    transform: translate(-50%, 0%);
   }
@@ -68,10 +68,10 @@ const StyledWrapper = styled.div`
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 250px;
+    z-index: 1;
+    width: 310px;
     height: 150px;
     transform: translate(-50%, -100%);
-    z-index: 1;
   }
 
   .candle1 {
@@ -235,8 +235,8 @@ const StyledWrapper = styled.div`
 
   .candle2__fire {
     position: absolute;
-    top: 50%;
-    left: 40%;
+    top: 48%;
+    left: 36%;
     display: block;
     width: 16px;
     height: 20px;
@@ -478,7 +478,7 @@ const StyledWrapper = styled.div`
   @keyframes dance-fire {
     59%,
     89% {
-      left: 40%;
+      left: 36%;
       width: 0px;
       height: 0px;
     }
@@ -491,7 +491,7 @@ const StyledWrapper = styled.div`
     39%,
     47%,
     55% {
-      left: 40.8%;
+      left: 36.8%;
       width: 16px;
       height: 20px;
       background: #ffc107;
@@ -505,7 +505,7 @@ const StyledWrapper = styled.div`
     43%,
     51%,
     58% {
-      left: 41.2%;
+      left: 37.2%;
       width: 16px;
       height: 20px;
       background: #ff9800;

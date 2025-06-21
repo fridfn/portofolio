@@ -71,6 +71,51 @@ const metadata = {
      description: "Advocates are quiet visionaries, often serving as inspiring and tireless idealists. These rare types are open-minded and imaginative, applying care and creativity."
     },
    ],
+   personality: [
+    {
+     value: 75,
+     type: "Energy",
+     title: "Introverted",
+     untype: "Extraverted",
+     color: "rgb(31,113,170)"
+    },
+    {
+     value: 62,
+     type: "Mind",
+     title: "Intuitive",
+     untype: "Observant",
+     color: "rgb(170,105,31)"
+    },
+    {
+     value: 58,
+     type: "Nature",
+     title: "Feeling",
+     untype: "Thinking",
+     color: "rgb(31,170,36)"
+    },
+    {
+     value: 74,
+     type: "Tactics",
+     title: "Judging",
+     untype: "Prospecting",
+     color: "rgb(31,170,145)"
+    },
+    {
+     value: 65,
+     type: "Identity",
+     untype: "Turbulent",
+     title: "Assertive",
+     color: "rgb(170,59,31)"
+    },
+   ],
+   category: [
+    {
+     name: "INFJ",
+     avatar: "mbti_infj",
+     tags: ["Introverted", "Intuitive"],
+     comment: "deskripsi menarik tentang mbti tersebut"
+    },
+   ]
   },
   personality: {
    title: {
@@ -123,25 +168,25 @@ const metadata = {
   ],
   reviews: [
    {
-    client: "Nayla",
+    name: "Nayla",
     avatar: "nayla",
     from: "Students at SMK Bina Prestasi",
     comment: "Farid helped me turn a Figma design into a fully functional website for a school project. His attention to detail and guidance made the process smooth and really improved the final result."
    },
    {
-    client: "Dede",
+    name: "Dede",
     avatar: "dede",
     from: "Students at SMK Yapin Bekasi",
     comment: "As someone new to web development, working with Farid was a great learning experience. He explained concepts clearly and always encouraged me to keep learning and experimenting."
    },
    {
-    client: "Stevan",
+    name: "Stevan",
     avatar: "stevan",
     from: "Frontend Freelancer",
     comment: "Farid was a fantastic teammate. He’s proactive, skilled, and always willing to support the team. Collaborating with him made our work more efficient and enjoyable."
    },
    {
-    client: "ChatGPT",
+    name: "ChatGPT",
     avatar: "chatgpt",
     from: "Artificial Intelligence",
     comment: "Farid was a fantastic teammate. He’s proactive, skilled, and always willing to support the team. Collaborating with him made our work more efficient and enjoyable."

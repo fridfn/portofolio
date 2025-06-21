@@ -25,7 +25,7 @@ const Pagination = ({ data }) => {
         value: value.routes,
         routes: value.routes
        })}
-       className={`items ${isActive === value.routes ? "active" : ""}`}>
+       className={`items ${isActive === value.routes && ("active")}`}>
        <ion-icon className="icon" name={value.icon}></ion-icon>
       </div>
      )}/>

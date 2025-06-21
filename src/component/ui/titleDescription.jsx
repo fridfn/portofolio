@@ -4,8 +4,8 @@ import DOMPurify from "dompurify"
 import EachUtils from "@/utils/EachUtils"
 import UseSwiper from  "@/utils/useSwiper"
 import UseListing from "@/utils/useListing"
-import Candles from "@/component/animate/candle"
 import Rocket from "@/component/animate/rocket"
+import Candles from "@/component/animate/candle"
 import CarouselCards from  "@/component/widget/carousel"
 
 const LogoIcons = ({ type }) => {
