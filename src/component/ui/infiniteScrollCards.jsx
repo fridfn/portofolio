@@ -9,7 +9,7 @@ import CarouselCards from "@/component/widget/carousel"
 const InfiniteScrollCards = ({ data }) => {
   return (
    <StyledWrapper>
-     <Marquee speed={30} delay={0.1} direction="right" gradient={true} gradientColor="#1A1A1A" gradientWidth={"5%"} pauseOnHover={false}>
+     <Marquee speed={30} delay={0.1} direction="right" gradient={true} gradientColor="#1A1A1A" gradientWidth={"5%"} play={false} pauseOnHover={false}>
        <EachUtils
          of={data}
          render={(value, index) => (
@@ -40,7 +40,7 @@ const StyledWrapper = styled.div`
   .rfm-marquee-container .rfm-marquee .bubble {
    width: 250px!important;
    word-break: break-all;
-   margin-left: 50px;
+   margin: 0 25px;
   }
 `;
 

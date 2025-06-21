@@ -290,6 +290,23 @@ span div .description {
  border-radius: 50%;
 }
 
+.carousel-box .bubble .wrapper {
+ flex-direction: row;
+ display: flex;
+ width: 100%;
+ padding: 5px 10px;
+ border: 2px solid blue;
+ background-color: var(--secondary-background);
+}
+
+.carousel-box .bubble .wrapper .box-image .box {
+ width: 50px;
+ height: 50px;
+ position: relative;
+ border-radius: 8px;
+ border: 2px solid var(--hightlight-text);
+}
+
 .bubble {
  position: relative;
  padding: 10px 15px;

@@ -1,23 +1,37 @@
 import React from "react"
+import EachUtils from "@/utils/EachUtils"
 import Avatar from "@/component/ui/avatar"
-import avatar from "@/assets/logo/profile_pict.jpg"
 import { getImage } from "@/utils/getImage"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Pagination, Navigation, Autoplay } from 'swiper/modules'
 
 
 const CarouselCards = ({ data }) => {
-  const { name, from, comment, avatar } = data;
+  const { name, from, comment, avatar, tags } = data;
   return (
    <div className='carousel-box'>
      <div className='bubble'>
+       <div className="wrapper">
+         <div className="box-image">
+          <Avatar name={avatar} />
+         </div>
+         <span>
+          <p className="title">{name}</p>
+          <EachUtils
+            of={tags}
+            render={(tag, index) => (
+              <p className="tags">{tag}</p>
+            )}
+          />
+         </span>
+       </div>
        <p className='description'>{comment}</p>
      </div>
-     { avatar && (
+     { !tags && (
       <div className='wrapper'>
         <Avatar name={avatar} />
         <div className='client-info'>
-         <p className='title'>{client}</p>
+         <p className='title'>{name}</p>
          <p className='info'>{from}</p>
         </div>
       </div>
